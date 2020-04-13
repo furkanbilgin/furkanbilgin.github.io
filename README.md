@@ -1,1 +1,0 @@
-# furkanbilgin.github.io
