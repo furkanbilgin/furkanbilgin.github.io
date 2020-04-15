@@ -43,9 +43,9 @@ y tuşuna basarak onay veriyoruz.
 apt-get install cockpit
 {% endhighlight %}
 
-Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişmek istiyorsanız cockpit socketini start etmeniz gerekmektedir.
+Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişmek istiyorsanız cockpit socketini enable etmeniz gerekmektedir.
 {% endhighlight %}
-systemctl start cockpit.socket
+sudo systemctl enable --now cockpit.socket
 {% endhighlight %}
 
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
