@@ -28,7 +28,7 @@ Kuruluma gelecek olursak.
 Sisteminizi update etmek için aşağıdaki kodları çalıştırınız
 Upgrade sonrası gerekliyse sunucunun yeniden başlaması için -y parametresini ekliyorum.
 
-{% highlight c %}
+{% highlight%}
 sudo apt-get update
 sudo apt-get upgrade -y
 {% endhighlight %}
