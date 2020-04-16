@@ -39,6 +39,10 @@ sudo apt-get update
 sudo apt-get upgrade -y
 {% endhighlight %}
 
+posts/cockpit/update-upgrade.png
+
+posts/cockpit.png
+
 
 Sunucumuzu güncelledikten sonra cockpit uygulamasını kurmak için aşağıdaki kodu çalıştırıyoruz.
 
