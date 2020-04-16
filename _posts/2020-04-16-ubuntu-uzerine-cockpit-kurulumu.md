@@ -59,6 +59,14 @@ Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişm
 sudo systemctl enable --now cockpit.socket
 {% endhighlight %}
 
+![Picture description](/assets/img/posts/cockpit/socket-enable.png) 
+
+Şimdi scoketin durumuna bakabiliriz.
+
+{% highlight c %}
+sudo systemctl status cockpit
+{% endhighlight %}
+
 ![Picture description](/assets/img/posts/cockpit/cocpit-status.png){: .center-image }
  
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
