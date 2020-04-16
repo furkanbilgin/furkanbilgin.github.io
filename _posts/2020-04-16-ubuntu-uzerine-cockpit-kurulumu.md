@@ -19,7 +19,7 @@ Cockpit ile yapabileceğimiz temel bazı konular aşağıdaki şekildedir.
 5- Web arayüzünde terminal erişimi sunmaktadır.
 
 Uygulamanın kendi web sitesinde detayları inceleye bilirsiniz.
-https://cockpit-project.org/
+ https://cockpit-project.org/
 
 
 Kuruluma gelecek olursak.
@@ -28,10 +28,10 @@ Kuruluma gelecek olursak.
 Sisteminizi update etmek için aşağıdaki kodları çalıştırınız
 Upgrade sonrası gerekliyse sunucunun yeniden başlaması için -y parametresini ekliyorum.
 
-
+{% highlight c %}
 sudo apt-get update
 sudo apt-get upgrade -y
-
+{% endhighlight %}
 
 cockpit
 
