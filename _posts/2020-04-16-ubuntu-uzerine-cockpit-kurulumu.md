@@ -40,7 +40,6 @@ sudo apt-get update
 sudo apt-get upgrade -y
 {% endhighlight %}
 
-cockpit
 
 Sunucumuzu güncelledikten sonra cockpit uygulamasını kurmak için aşağıdaki kodu çalıştırıyoruz.
 
@@ -48,12 +47,19 @@ Kurulum sırasında bizden y/n şeklinde onay isteyecektir.
 
 y tuşuna basarak onay veriyoruz.
  
+ {% highlight c %}
+ 
 apt-get install cockpit
  
+ {% endhighlight %}
 
 Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişmek istiyorsanız cockpit socketini enable etmeniz gerekmektedir.
  
+  {% highlight c %}
+  
 sudo systemctl enable --now cockpit.socket
+ 
+ {% endhighlight %}
  
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
 
