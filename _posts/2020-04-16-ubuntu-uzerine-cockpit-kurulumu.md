@@ -76,6 +76,6 @@ sunucu_ip_adresi:9090
 
 
 
-Not: Google Chrome tarayısında sorun yaşayabilirsiniz, Firefox denemenizi öneririm.
+Not: Google Chrome tarayıcısında sorun yaşayabilirsiniz, Firefox denemenizi öneririm.
 
  
