@@ -6,7 +6,7 @@ layout: post
 permalink: /ubuntu-uzerine-cockpit-kurulumu/
 categories: Ubuntu
 tags: [ubuntu, cockpit, web admin]
-img: cockpit.png
+img: /posts/cockpit.png
 ---
 
 Cockpit LINUX tabanlı sunucularımızı bir web tarayıcısı aracılığıyla kontrol etmemize yarayan basit ve kullanışlı bir yönetim panelidir.
@@ -36,7 +36,6 @@ Upgrade sonrası gerekliyse sunucunun yeniden başlaması için -y parametresini
 
 {% highlight c %}
 sudo apt-get update
-
 sudo apt-get upgrade -y
 {% endhighlight %}
 
@@ -47,19 +46,15 @@ Kurulum sırasında bizden y/n şeklinde onay isteyecektir.
 
 y tuşuna basarak onay veriyoruz.
  
- {% highlight c %}
- 
-apt-get install cockpit
- 
- {% endhighlight %}
+{% highlight c %} 
+apt-get install cockpit 
+{% endhighlight %}
 
 Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişmek istiyorsanız cockpit socketini enable etmeniz gerekmektedir.
  
-  {% highlight c %}
-  
+{% highlight c %}
 sudo systemctl enable --now cockpit.socket
- 
- {% endhighlight %}
+{% endhighlight %}
  
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
 
