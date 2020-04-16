@@ -43,6 +43,10 @@ posts/cockpit/update-upgrade.png
 
 posts/cockpit.png
 
+![Picture description](posts/cockpit/update-upgrade.png){: .center-image }
+![Picture description](/posts/cockpit/update-upgrade.png){: .center-image }
+
+
 
 Sunucumuzu güncelledikten sonra cockpit uygulamasını kurmak için aşağıdaki kodu çalıştırıyoruz.
 
