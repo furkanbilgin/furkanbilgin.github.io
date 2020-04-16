@@ -6,10 +6,10 @@ layout: post
 permalink: /ubuntu-uzerine-cockpit-kurulumu/
 categories: Ubuntu
 tags: [ubuntu, cockpit, web admin]
-img: /posts/cockpit.png
+img: posts/cockpit.png
 ---
 
-Cockpit LINUX tabanlı sunucularımızı bir web tarayıcısı aracılığıyla kontrol etmemize yarayan basit ve kullanışlı bir yönetim panelidir.
+Cockpit LINUX tabanlı sunucularımızı bir web tarayıcısı aracılığıyla kontrol etmemize sağlayan basit ve kullanışlı bir yönetim panelidir.
 
 Cockpit ile yapabileceğimiz temel bazı konular aşağıdaki şekildedir.
 
