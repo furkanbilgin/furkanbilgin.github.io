@@ -31,7 +31,6 @@ Kuruluma gelecek olursak.
 Öncelikle sisteminizi update etmenizi öneririm.
 
 Sisteminizi update etmek için aşağıdaki kodları çalıştırınız
-
 Upgrade sonrası gerekliyse sunucunun yeniden başlaması için -y parametresini ekliyorum.
 
 {% highlight c %}
@@ -39,15 +38,8 @@ sudo apt-get update
 sudo apt-get upgrade -y
 {% endhighlight %}
 
-posts/cockpit/update-upgrade.png
-
-posts/cockpit.png
-
-
-
 ![Picture description](/assets/img/posts/cockpit/update-upgrade.png){: .center-image }
 
-![Picture description](assets/img/posts/cockpit/update-upgrade.png){: .center-image }
 
 Sunucumuzu güncelledikten sonra cockpit uygulamasını kurmak için aşağıdaki kodu çalıştırıyoruz.
 
@@ -59,11 +51,15 @@ y tuşuna basarak onay veriyoruz.
 apt-get install cockpit 
 {% endhighlight %}
 
+![Picture description](/assets/img/posts/cockpit/cockpit-install.png){: .center-image }
+
 Kurulum başarılı bir şekilde tamamlandıktan sonra bir tarayıcı ile erişmek istiyorsanız cockpit socketini enable etmeniz gerekmektedir.
  
 {% highlight c %}
 sudo systemctl enable --now cockpit.socket
 {% endhighlight %}
+
+![Picture description](/assets/img/posts/cockpit/cocpit-status.png){: .center-image }
  
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
 
