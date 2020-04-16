@@ -70,6 +70,11 @@ sudo systemctl status cockpit
 ![Picture description](/assets/img/posts/cockpit/cocpit-status.png){: .center-image }
  
 Artık bir tarayıcı ile paneli keşfe çıkabilirsiniz.
+URL'yi aşağıdaki şekilde düzenleyebilirsiniz.
+
+sunucu_ip_adresi:9090
+
+
 
 Not: Google Chrome tarayısında sorun yaşayabilirsiniz, Firefox denemenizi öneririm.
 
