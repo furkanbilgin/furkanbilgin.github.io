@@ -6,7 +6,7 @@ layout: post
 permalink: /ubuntu-tabanli-isletim-sistemlerinde-static-ip-tanimlama/
 categories: Ubuntu
 tags: [ubuntu, staticip, network, ip]
-img: /assets/img/posts/staticip/ip-addr.png
+img: assets/img/posts/staticip/ip-addr.png
 ---
 
 Bugünki yazımızda ubuntu tabanlı işletim sistemlerinde terminal üzerinde nasıl static ip tanımlanacağını göreceğiz.
