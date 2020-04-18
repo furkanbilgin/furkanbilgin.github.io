@@ -6,7 +6,7 @@ layout: post
 permalink: /ubuntu-tabanli-isletim-sistemlerinde-static-ip-tanimlama/
 categories: Ubuntu
 tags: [ubuntu, staticip, network, ip]
-img: posts/static/01-netcfg.png
+img: /assets/img/posts/static/01-netcfg.png
 ---
 
 Bugünki yazımızda ubuntu tabanlı işletim sistemlerinde terminal üzerinde nasıl static ip tanımlanacağını göreceğiz.
@@ -18,7 +18,7 @@ ip addr show
 
 ![Picture description](/assets/img/posts/static/ip-addr.png){: .center-image }
 
-/etc/netplan dizinine gelmemiz gerekmektedir, bunun için aşağıdaki kodu çalıştırıyoruz.
+Network kartının ismini öğrendikten sonra /etc/netplan dizinine gelmemiz gerekmektedir, bunun için aşağıdaki kodu çalıştırıyoruz.
 {% highlight c %}
 cd /etc/netplan
 {% endhighlight %}
