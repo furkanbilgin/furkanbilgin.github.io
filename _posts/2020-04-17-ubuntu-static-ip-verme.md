@@ -16,14 +16,14 @@ Bugünki yazımızda ubuntu tabanlı işletim sistemlerinde terminal üzerinde n
 ip addr show
 {% endhighlight %}
 
-![Picture description](/assets/img/posts/static/ip-addr.png){: .center-image }
+![Picture description](/assets/img/posts/staticip/ip-addr.png){: .center-image }
 
 Network kartının ismini öğrendikten sonra /etc/netplan dizinine gelmemiz gerekmektedir, bunun için aşağıdaki kodu çalıştırıyoruz.
 {% highlight c %}
 cd /etc/netplan
 {% endhighlight %}
 
-![Picture description](/assets/img/posts/static/cd-etc.png){: .center-image }
+![Picture description](/assets/img/posts/staticip/cd-etc.png){: .center-image }
 
 netplan klasörüne geldiğimizde ls komutu ile dizin içerisindeki dosyaları görebiliriz.
 bu dosyalardan 01-netcfg.yaml dosyasını düzenlememiz gerekiyor, ben nano ile düzenleyeceğim. sizler vi vb editörleri tercih edebilirsiniz
@@ -34,7 +34,7 @@ sudo nano 01-netcfg.yaml
 
 Bu dosyayı açtıktan sonra aşağıdaki görseldeki gibi bir ip tanımlaması yapabilirsiniz.
 
-![Picture description](/assets/img/posts/static/01-netcfg.png){: .center-image }
+![Picture description](/assets/img/posts/staticip/01-netcfg.png){: .center-image }
 
 Editörden çıktıtan sonra netplan apply yapmamız gerekiyor.
 
@@ -42,4 +42,4 @@ Editörden çıktıtan sonra netplan apply yapmamız gerekiyor.
 sudo nano netplan apply
 {% endhighlight %}
 
-![Picture description](/assets/img/posts/static/netcfg-apply.png){: .center-image }
+![Picture description](/assets/img/posts/staticip/netcfg-apply.png){: .center-image }
