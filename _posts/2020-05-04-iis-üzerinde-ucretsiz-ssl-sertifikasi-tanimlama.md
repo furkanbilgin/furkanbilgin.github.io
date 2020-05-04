@@ -1,6 +1,6 @@
 ---
 title: 'Windows Server IIS Üzerinde Ücretsiz SSL Sertifikası Tanımlama'
-date: 2020-04-12T00:00:00+00:00
+date: 2020-05-02T00:00:00+00:00
 author: Furkan
 layout: post
 permalink: /iis-üzerinde-ucretsiz-ssl-sertifikasi-tanimlama/
@@ -70,4 +70,7 @@ Dilerseniz web.config dosyasından http üzerine gelen tüm istekleri https tara
 </configuration>
 {% endhighlight %}
 
- 
+Yöntem 2  : 
+Eğer bu işlemlerin tamamını bir arayüz ile yapmak isterseniz certifytheweb uygulamasını deneyebilirsiniz.
+https://certifytheweb.com/
+Örnek: https://www.youtube.com/watch?v=TcBJq9bHeh4
