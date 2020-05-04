@@ -3,7 +3,7 @@ title: 'Windows Server IIS Üzerinde Ücretsiz SSL Sertifikası Tanımlama'
 date: 2020-05-02T00:00:00+00:00
 author: Furkan
 layout: post
-permalink: /iis-üzerinde-ucretsiz-ssl-sertifikasi-tanimlama/
+permalink: /iis-uzerinde-ucretsiz-ssl-sertifikasi-tanimlama/
 categories: Windows
 tags: [windows, iis, ssl]
 img: posts/ssl/win-acme.png
