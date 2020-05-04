@@ -12,7 +12,7 @@ img: posts/ssl/win-acme.png
 
 Bu öğreticide Win-Acme2 clientını kullanarak IIS üzerinde barındırdığımız web sitelerimiz için ücretsiz SSL sertifikası oluşturmayı göreceğiz.
 
-Öncelikle kendi sitesinden uygulamanın son sürümünü indiriyoruz. </br><br>
+Öncelikle kendi sitesinden uygulamanın son sürümünü indiriyoruz.<br>
 <a href="https://www.win-acme.com/" target="_blank">win-acme web sitesi için tıklayınız.</a>
 
 Uygulamayı indirdikten sonra sunucuda daha sonra silmeyeceğimiz veya yerini değiştirmeyeceğimiz bir yere koyuyuoruz.(Outo Renew için gerekiyor)
