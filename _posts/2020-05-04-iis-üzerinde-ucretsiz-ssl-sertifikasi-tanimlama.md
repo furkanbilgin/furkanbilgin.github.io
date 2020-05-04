@@ -15,8 +15,7 @@ Bu öğreticide Win-Acme2 clientını kullanarak IIS üzerinde barındırdığı
 Öncelikle kendi sitesinden uygulamanın son sürümünü indiriyoruz.
 https://www.win-acme.com/
 
-Uygulamayı indirdikten sonra sunucuda daha sonra silmeyeceğimiz bir yere koyuyuoruz (Outo Renew için gerekiyor)
-
+Uygulamayı indirdikten sonra sunucuda daha sonra silmeyeceğimiz veya yerini değiştirmeyeceğimiz bir yere koyuyuoruz.(Outo Renew için gerekiyor)
 Klasör içerisinde bulunan wacs.exe uygulamasını "Administrator" yetkisi ile çalıştırıyoruz.
 
 ![Picture description](/assets/img/posts/ssl/win-acme-start.png){: .center-image }
@@ -50,7 +49,11 @@ Eğer bu işlemi ilk defa yapıyorsanız olası durumlarda sizinle iletişime ge
 ve işlem bu kadar. Şimdi ssl sertifikanızı kontrol edebilirsiniz.
 https://www.sslshopper.com/ssl-checker.html
 
-Not:
+Not 1: 
+Bu uygulama aynı zamanda zamanlanmış görevlere sertifika bitiş tarihi için yenileyici bir görev oluşturmaktadır.
+Bu görevin çalışabilmesi için başta indirdiğimiz klasörün yerini değiştirmeyiniz.
+
+Not 2:
 Dilerseniz web.config dosyasından http üzerine gelen tüm istekleri https tarafına yönlendirmek için aşağıdaki kodu kullanabilirsiniz.
 
 {% highlight c %}
