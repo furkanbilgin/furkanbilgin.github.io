@@ -78,4 +78,4 @@ Eğer bu işlemlerin tamamını bir arayüz ile yapmak isterseniz certifytheweb 
 https://certifytheweb.com/
 
 Örnek: 
-<iframe width="420" height="315" src="https://www.youtube.com/watch?v=TcBJq9bHeh4" frameborder="0" allowfullscreen></iframe>
+<iframe width="560" height="315" src="https://www.youtube.com/embed/aoSUidj4ovA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
