@@ -12,17 +12,19 @@ img: posts/ssl/win-acme.png
 
 Bu öğreticide Win-Acme2 clientını kullanarak IIS üzerinde barındırdığımız web sitelerimiz için ücretsiz SSL sertifikası oluşturmayı göreceğiz.
 
-Öncelikle kendi sitesinin uygulamanın son sürümünü indiriyoruz.
+Öncelikle kendi sitesinden uygulamanın son sürümünü indiriyoruz.
 https://www.win-acme.com/
 
 Uygulamayı indirdikten sonra sunucuda daha sonra silmeyeceğimiz bir yere koyuyuoruz (Outo Renew için gerekiyor)
 
-Klasör içerisinde bulunan wacs.exe uygulamasını çalıştırıyoruz.
+Klasör içerisinde bulunan wacs.exe uygulamasını "Administrator" yetkisi ile çalıştırıyoruz.
+
 ![Picture description](/assets/img/posts/ssl/win-acme-start.png){: .center-image }
 
 Uygulamayı çalıştırdığımızda bize ana 6 seçenek sunuyor. 
 Biz default seçenek olan "N: Create renewal (default settings)" seçeneğini seçiyoruz.
 Bunun için dilerseniz hiç bir tuşa basmadan sadece enter'a basabilir veya N yazarak enter'a basabilirsiniz.
+
 ![Picture description](/assets/img/posts/ssl/win-acme-start.png){: .center-image }
 
 
@@ -41,6 +43,7 @@ Ben tüm bind'lar için https oluşturmak istiyorum ve 3'ü seçiyorum.
 ![Picture description](/assets/img/posts/ssl/set-site.png){: .center-image }
 
 Daha sonra gelen ekranda bize seçtiğimiz bindingi doğrulamamız istiyor "y" yazdıktan sonra enter'a basıyorum.
+
 ![Picture description](/assets/img/posts/ssl/set-ssl.png){: .center-image }
 
 Eğer bu işlemi ilk defa yapıyorsanız olası durumlarda sizinle iletişime geçilmesi için bir eposta adresi talep edecektir.
@@ -73,4 +76,6 @@ Dilerseniz web.config dosyasından http üzerine gelen tüm istekleri https tara
 Yöntem 2  : 
 Eğer bu işlemlerin tamamını bir arayüz ile yapmak isterseniz certifytheweb uygulamasını deneyebilirsiniz.
 https://certifytheweb.com/
-Örnek: https://www.youtube.com/watch?v=TcBJq9bHeh4
+
+Örnek: 
+<iframe width="420" height="315" src="https://www.youtube.com/watch?v=TcBJq9bHeh4" frameborder="0" allowfullscreen></iframe>
