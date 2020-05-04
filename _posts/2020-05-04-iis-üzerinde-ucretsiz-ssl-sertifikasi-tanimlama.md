@@ -77,5 +77,6 @@ Yöntem 2  :
 Eğer bu işlemlerin tamamını bir arayüz ile yapmak isterseniz certifytheweb uygulamasını deneyebilirsiniz.
 https://certifytheweb.com/
 
-Örnek: 
+Örnek: https://youtu.be/aoSUidj4ovA
+
 <iframe width="560" height="315" src="https://www.youtube.com/embed/aoSUidj4ovA" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
