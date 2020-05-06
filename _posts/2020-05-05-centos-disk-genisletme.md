@@ -118,7 +118,7 @@ vgextend centos /dev/sda4
 ![Picture description](/assets/img/posts/extend_disk/vgextend.png){: .center-image }
 
 Disk oluşturduktan sonra, bu diski istediğiniz diske dahil ederek diski genişletebilirsiniz.
-Komut içerisindeki "+100%FREE" ibaresi tüm boş alanı hedef gösterilen alana genişlet manasına geliyor, dilerseniz o alana +10GB yazarak dilediğiniz kadar genişleme sağlayabilirsiniz.
+Komut içerisindeki "+100%FREE" ibaresi tüm boş alanı hedef gösterilen alana genişlet manasına geliyor, dilerseniz o alana +10GB  veya +5GB yazarak dilediğiniz kadar genişleme sağlayabilirsiniz.
 Ben tüm boş alanı genişletmek istiyorum, bunun için aşağıdaki komutu kullanıyoruz. 
 
 {% highlight c %}
