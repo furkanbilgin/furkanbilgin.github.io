@@ -9,7 +9,7 @@ tags: [centos, linux, disk, fdisk]
 img: posts/extend_disk/lvm.png
 ---
 
-Bu öğreticide sizlerler Centos işletim sistemine sahip bir sunucuda terminal üzerinden disk genişletme(disk extend) işleminin nasıl yapıldığını göreceğiz.
+Bu öğreticide sizlerle Centos işletim sistemine sahip bir sunucuda terminal üzerinden disk genişletme(disk extend) işleminin nasıl yapıldığını göreceğiz.
 Maalesef bu yazıda sizlere "next>next>next" diyerek işlem yaptıramayacağım :) 
 Windows tarafında user interface (UI) alışkanlığı olan kişiler bu işlemi ilk yaptıklarında zorlanabilirler ancak tekrar ettikçe ve mantığını kavradıkça konu kolaylaşacaktır.
 
