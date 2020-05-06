@@ -22,6 +22,8 @@ df -khT
 
 ![Picture description](/assets/img/posts/extend_disk/df-h.png){: .center-image }
 
+Yukarıdaki görselde yeşil kutu içine aldığım alanı genişleteceğim, kırmızı kutu içerisinde olan ibare ise bu alanın tipi, en son işlem sırasında bize lazım olacak.
+
 Daha sorna partionları listeleyerek durumu görelim. 
 Dilerseniz çıkan sonucun fotoğrafını çekerek, işlem sonuyla kıyaslama yapabilirsiniz.
 
