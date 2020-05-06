@@ -6,7 +6,7 @@ layout: post
 permalink: /centos-disk-genisletme/
 categories: Centos
 tags: [centos, linux, disk, fdisk]
-img: posts/ssl/win-acme.png
+img: posts/extend_disk/lvm.png
 ---
 
 Bu öğreticide sizlerler Centos işletim sistemine sahip bir sunucuda terminal üzerinden disk genişletme(disk extend) işleminin nasıl yapıldığını göreceğiz.
@@ -152,3 +152,7 @@ resize2fs /dev/mapper/centos-root
 şimdi yeni diskinizi doldurana kadar kullanabilirsiniz.
 
 <b>Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen bana ulaşınız. <b>
+
+Ve son olarak aşağıdaki görseli incelemeniz ve kavramları araştırmanızda fayda var.
+
+![Picture description](/assets/img/posts/extend_disk/lvm.png){: .center-image }
