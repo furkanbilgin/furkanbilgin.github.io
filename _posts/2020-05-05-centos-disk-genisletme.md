@@ -112,7 +112,7 @@ Fiziksel alanı oluşturduktan sonra bu alanı diğer alanlar ile aynı gruba al
 Benim fiziksel alan grup adım "centos" , bunu görüntülemek için en başta çalıştırdığımız ve ekran görüntüsü aldığınız "pvdisplay" komutuna bakabilirsiniz.
 
 {% highlight c %}
-vgextend centos /dev/sda3
+vgextend centos /dev/sda4
 {% endhighlight %}
 
 ![Picture description](/assets/img/posts/extend_disk/vgextend.png){: .center-image }
