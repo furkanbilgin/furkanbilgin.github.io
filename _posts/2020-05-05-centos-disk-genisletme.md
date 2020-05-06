@@ -151,8 +151,8 @@ resize2fs /dev/mapper/centos-root
  
 şimdi yeni diskinizi doldurana kadar kullanabilirsiniz.
 
-<b>Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen bana ulaşınız. <b>
-
 Ve son olarak aşağıdaki görseli incelemeniz ve kavramları araştırmanızda fayda var.
 
 ![Picture description](/assets/img/posts/extend_disk/lvm.png){: .center-image }
+
+<b>Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen bana ulaşınız. <b>
