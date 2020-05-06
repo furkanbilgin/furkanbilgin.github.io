@@ -100,7 +100,7 @@ Bu sizde 2 veya 3 veya (n) olabilir ...
 Benim partion ID 4.  yani ben /dev/sda4 için işlem yapacağım.
 Eğer 5 olsaydı /dev/sda5 için işlem yapacaktım.
 Görselde yeşil kutucuk içine aldıgım alanda benim partition id gözüküyor.
-Bu görseli görüntülemek için <a href="furkanbilgin.com/assets/img/posts/extend_disk/fdisk-n.png" target="_blank">tıklayınız.</a>
+Bu görseli görüntülemek için <a href="assets/img/posts/extend_disk/fdisk-n.png" target="_blank">tıklayınız.</a>
 
 {% highlight c %}
 pvcreate /dev/sda4
