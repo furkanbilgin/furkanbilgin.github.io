@@ -1,5 +1,5 @@
 ---
-title: 'Centos Sunucu Üzerinde Disk Genişletme'
+title: 'Centos 7 Sunucu Üzerinde Disk Genişletme (Disk Extend)'
 date: 2020-05-06T02:51:00+00:00
 author: Furkan
 layout: post
