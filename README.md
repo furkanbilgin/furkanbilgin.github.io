@@ -1,36 +1,59 @@
-# Flexible-Jekyll is a simple and clean theme for Jekyll
+# Ephesus
 
-![](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/promo-img.jpg?raw=true)
+Ephesus Jekyll Theme - Simple and Minimal Jekyll Blog Theme
 
-## Demo
+Author [Hakan Torun](https://hakan.io).
 
-Check the theme in action [Demo](https://artemsheludko.github.io/flexible-jekyll/)
+- **Demo:** https://pardin.us/ephesus/
 
-The main page would look like this:
+### Features
 
-![Main page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/home-page.jpg?raw=true)
+- [x] Tiny CSS & No Dependency
+- [x] Responsive Design
+- [x] Dark/Light Theme
+- [x] Custom 404 Page
+- [x] About Page
+- [x] Tags Page
+- [x] Code Highlighter
+- [x] Social Share
+- [x] Atom & Json feeds
+- [x] Robots.txt
+- [x] Sitemap
+- [x] Next & Previous Post
+- [x] Pagination
+- [x] Disqus
+- [x] Mathjax Support
+- [x] Google Analytics
 
-The post page would look like this:
+## Screenshots
 
-![Post page preview](https://github.com/artemsheludko/flexible-jekyll/blob/master/assets/img/post-example.jpg?raw=true)
+![light-theme](https://github.com/onepase/Ephesus/blob/master/light.png)
+![dark-theme](https://github.com/onepase/Ephesus/blob/master/dark.png)
 
-## Features
+## Installation
 
-- [Google Fonts](https://fonts.google.com/)
-- [Font Awesome](http://fontawesome.io/)
-- [Disqus](https://disqus.com/)
-- [Analytics](https://analytics.google.com/analytics/web/)
-- Support Emoji
+Run local server:
 
-## Installation:
+```bash
+$ git clone https://github.com/onepase/Ephesus.git
+$ cd Ephesus
+$ bundle install
+$ bundle exec jekyll build
+$ bundle exec jekyll serve
+```
 
-Fork the ``master`` branch and follow the [Jekyll Installation Documentation](https://jekyllrb.com/docs/installation/).
+Navigate to `127.0.0.1:4000`.
+
+Tags are created automatically under the /tags page.
+
+To use a math formula in a post, use the mathjax:true tag in the post.
+
+## Contributing
+
+Feel free to open a pull request for contributing.
+
+Please feel free to contribute. Do not hesitate to open a pull request and fix it, please read [contributing](./CONTRIBUTING.md) before PR.
 
 ## License
 
-GNU General Public License v3.0
-
-## Donate
-
-<p>If you like the themes that I create you can become my sponsor on <a href="https://www.patreon.com/artemsheludko" target="_blank">Patreon</a>.
-<p align="center"><b>Thank you for your support ❤️</b></p>
+This project is open source and available under the [MIT License](LICENSE.md).

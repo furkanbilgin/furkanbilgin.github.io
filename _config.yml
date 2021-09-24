@@ -1,35 +1,83 @@
-title: Hello, world! 
-description: Personal Research Blog - Windows, Linux ,System
-permalink: ':title/'
-baseurl: "" # the subpath of your site, e.g. /blog
-url: "" # the base hostname & protocol for your site, e.g. http://example.com
-site-twitter: #if your site has a twitter account, enter it here
+# Site settings
+site: Furkan Bilgin
+title:  Furkan Bilgin
+keywords:  Furkan Bilgin, blog
+description: >-
+   Furkan Bilgin Personal Blog
+lang: en-US
+timezone:  Europe/Istanbul
+repo: https://github.com/onepase/Ephesus # site repo [optional]
+google_verify:      XX # Put your Google Verification here
+google_analytics:   UA-73661033-5 # Put your Google Analytics code
+discus-identifier: XX
 
-# Author Settings
-author: Furkan Bilgin # add your name
-author-img: furkan-bilgin.jpg # add your photo
-about-author: System Manager @Tekhnelogos | Founder @Sentez Ofis
-social-twitter: furkanbilginn
-social-facebook: furkanbilgin
-social-github: furkanbilgin # add your Github handle
-social-linkedin: furkanbilgin
-social-email: furkanbilgin@windowslive.com
-
-# Disqus
-discus-identifier: mr-brown # add your discus identifier
-
-# Tracker
-analytics: UA-73661033-5 # Google Analytics
+# Author settings
+author:
+  name:  Furkan Bilgin
+  bio: System Engineer @tekhnelogossw <br> Founder @SentezOfis 
+  picture: assets/images/profile.jpg 
+  github: furkanbilgin # github username
+  twitter: furkanbilginn # twitter username
+  facebook: furkanbilgin # facebook username
+  instagram: furkanbilgin # instagram username
+  #youtube: onepase # youtube username
+  email: furkan@furkanbilgin.com # email adress
 
 
-# Build Settings
+# URL settings
+url: "https://furkanbilgin.com" # Domain Name of host. [username].github.io for github pages
+baseurl: "" # sub folder for jekyll site. only if jekyll site not in root of host. leave blank if not wishd. always add / in front.
+permalink: pretty
+
 markdown: kramdown
-plugins:
-  - jekyll-sitemap
-  - jekyll-paginate
-  - jemoji
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
 
-paginate: 8
+
+exclude:
+  - .jekyll-cache
+  - .obsidian
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE.md
+  - README.md
+  - CONTRIBUTING.md
+
+plugins:
+  - jekyll-paginate
+  - jekyll-sitemap
+  - jekyll-relative-links
+paginate: 20
 paginate_path: "/page/:num"
 
-exclude: ["node_modules", "gulpfile.js", "package.json", "yarn.lock"]
+collections:
+  pages:
+    output: true
+    permalink: /:name
+  posts:
+    output: true
+    permalink: /:slug
+  
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      layout: "default"
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      layout: "page"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+
+relative_links:
+  enabled:     true
+  collections: false
