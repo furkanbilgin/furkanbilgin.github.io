@@ -1,12 +1,12 @@
 # Site settings
 site: Furkan Bilgin
-title:  Furkan Bilgin
-keywords:  Furkan Bilgin, blog
+title:  Personal Research Blog - Windows, Linux ,System
+keywords:  Furkan Bilgin, blog, Windows, Linux ,System
 description: >-
    Furkan Bilgin Personal Blog
 lang: en-US
 timezone:  Europe/Istanbul
-repo: https://github.com/onepase/Ephesus # site repo [optional]
+repo: https://github.com/furkanbilgin/furkanbilgin.github.io # site repo [optional]
 google_verify:      XX # Put your Google Verification here
 google_analytics:   UA-73661033-5 # Put your Google Analytics code
 discus-identifier: XX
@@ -14,14 +14,14 @@ discus-identifier: XX
 # Author settings
 author:
   name:  Furkan Bilgin
-  bio: System Engineer @tekhnelogossw <br> Founder @SentezOfis 
+  bio: System Manager @Tekhnelogos | Founder @Sentez Ofis
   picture: assets/img/furkan-bilgin.jpg
   github: furkanbilgin # github username
   twitter: furkanbilginn # twitter username
   facebook: furkanbilgin # facebook username
   instagram: furkanbilgin # instagram username
   #youtube: onepase # youtube username
-  email: furkan@furkanbilgin.com # email adress
+  email: furkanbilgin@windowslive.com # email adress
 
 
 # URL settings
