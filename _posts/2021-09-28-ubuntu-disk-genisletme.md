@@ -24,7 +24,6 @@ df -h
 
 Yukarıdaki görselde kırmızı kutu içine aldığım alanı /dev/sda2 diskini genişleteceğim.
 
-Daha sorna partionları listeleyerek durumu görelim. 
 Dilerseniz çıkan sonucun fotoğrafını çekerek, işlem sonuyla kıyaslama yapabilirsiniz.
 
 Şimdi sunucuyu kapatarak diski dilediğiniz kadar genişeletebilirsiniz. Ben 70 gb olan diskime 30 gb daha ekleme yapacağım.
