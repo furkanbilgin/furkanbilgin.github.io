@@ -40,7 +40,7 @@ parted /dev/sda
 
 Çıkan ekran "help" yazarak seçenekleri görebiliriz. 
 Sırasıyla aşağıdaki komutları giriyoruz. 
-
+	
 Hangi partition büyütmek istediğimizi soruyor. Biz dev/sda2 yani 2 numaralı partition exten edeceğiz.
 {% highlight c %}
 (parted) resizepart 2                                                  
@@ -63,7 +63,6 @@ End?  [70GB]? -0
 (parted) quit                                                          
 Information: You may need to update /etc/fstab.
 {% endhighlight %}
-
 
 Evet neredeyse işlemlerin sonuna geldik. Artık "parted /dev/sda" ile işimiz bitti.
 Diski şimdi resize etmemiz gerekiyor. Bunun için ilgili diskin adı ile aşağıdaki komutu çalıştırıyorum. 
