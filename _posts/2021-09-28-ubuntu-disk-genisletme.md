@@ -28,7 +28,6 @@ Dilerseniz çıkan sonucun fotoğrafını çekerek, işlem sonuyla kıyaslama ya
 
 Şimdi sunucuyu kapatarak diski dilediğiniz kadar genişeletebilirsiniz. Ben 70 gb olan diskime 30 gb daha ekleme yapacağım.
 Bu adımdan sonra mutlaka sunucuyu yeniden başlatınız. Aksi taktirde işlem bittiğinde tekrar en başa dönmeniz gerekecektir.
-
 Ben sunucumu yeniden başlattım ve işlemlere devam ediyorum.
 
 Şimdi parted fonksiyonunu kullanarak diski genişleteceğiz.
@@ -41,9 +40,6 @@ parted /dev/sda
 
 Çıkan ekran "help" yazarak seçenekleri görebiliriz. 
 Sırasıyla aşağıdaki komutları giriyoruz. 
-
-
-şimdi sırasıyla aşağıdaki komutları giriyoruz.
 
 Hangi partition büyütmek istediğimizi soruyor. Biz dev/sda2 yani 2 numaralı partition exten edeceğiz.
 {% highlight c %}
