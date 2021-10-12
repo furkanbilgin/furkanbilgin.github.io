@@ -41,7 +41,10 @@ parted /dev/sda
 Çıkan ekran "help" yazarak seçenekleri görebiliriz. 
 Sırasıyla aşağıdaki komutları giriyoruz. 
 	
-Hangi partition büyütmek istediğimizi soruyor. Biz dev/sda2 yani 2 numaralı partition exten edeceğiz.
+Hangi partition büyütmek istediğimizi soruyor. 
+List yazarak partition listesi görebiliriz.
+Biz dev/sda2 yani 2 numaralı partition exten edeceğiz.
+
 {% highlight c %}
 (parted) resizepart 2                                                  
 {% endhighlight %}
