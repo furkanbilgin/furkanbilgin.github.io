@@ -4,8 +4,8 @@ date: 2022-02-09
 author: Furkan
 layout: post
 permalink: /install-zabbix-agent-centos7/
-categories: ubuntu
-tags: [ubuntu,centos, linux, zabbix]
+categories: centos, rhel
+tags: [centos ,rhel ,centos , linux, zabbix]
 img: posts/install-zabbix-agent-centos7/cover.png
 ---
 
