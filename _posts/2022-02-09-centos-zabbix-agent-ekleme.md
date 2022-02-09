@@ -1,15 +1,15 @@
 ---
-title: 'Zabbix Agent İle Centos Sunucu Takip Etme'
+title: 'Centos Sunucu Üzerine Zabbix Agent Yüklemek'
 date: 2022-02-09
 author: Furkan
 layout: post
-permalink: /centos-install-zabbix-agent/
+permalink: /install-zabbix-agent-centos7/
 categories: ubuntu
 tags: [ubuntu,centos, linux, zabbix]
 img: posts/centos-zabbix-agent/cover.png
 ---
 
-Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal zabbix agent yükleyerek zabbix ile nasıl takip edilebileceğini göreceğiz.
+Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.
 
 İşlemlere başlamadan önce sunucunuzun yedeğini almanızı tavsiye ederim. (snapshot, full backup vs.)
 
