@@ -6,7 +6,7 @@ layout: post
 permalink: /install-zabbix-agent-centos7/
 categories: ubuntu
 tags: [ubuntu,centos, linux, zabbix]
-img: posts/centos-zabbix-agent/cover.png
+img: posts/install-zabbix-agent-centos7/cover.png
 ---
 
 Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.
