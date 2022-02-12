@@ -57,7 +57,7 @@ Bunun için öncelikle zabbix-agent servisini start ediyoruz, sonra durumuna bak
 {% highlight c %}
 service zabbix-agent start
 systemctl status zabbix-agent
-systemctl enable abbix-agent
+systemctl enable zabbix-agent
 {% endhighlight %}
 
 
