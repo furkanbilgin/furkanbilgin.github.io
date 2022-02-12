@@ -37,8 +37,11 @@ yum install zabbix zabbix-agent -y
 
 Bu işlem için aşağıdaki yolun altında bulunan zabbix agent configurasyon dosyasındaki ilgili 4 satırı değiştirmemiz gerekmektedir.
 3.1- Zabbix Server İp Adresi : Server 
+
 3.2- Dinlenilecek sunucunun ip adresi : ListenIp
+
 3.3- ServerActive ip adresi : ServerActive
+
 3.4- Dinlenilecek sunucu adı : Hostname
 
 4- Adım: Firewall/Port Ayarları
