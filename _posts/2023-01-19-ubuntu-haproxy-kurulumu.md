@@ -205,7 +205,6 @@ systemctl status haproxy
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-statistic.png){: .center-image }
 
-
 **LAB Ortamı hakkında açıklama**
 
 Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal sunucu kurdum.
@@ -223,9 +222,3 @@ Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal 
 
 Bu sayede istekler haproxy üzerinden web sunucularına yönlendirilmiş oldu.
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen e-mail atınız.**
-
-
-
-
-
-
