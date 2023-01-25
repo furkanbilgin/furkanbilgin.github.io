@@ -37,7 +37,7 @@ add-apt-repository ppa:vbernat/haproxy-2.7
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-add-repo.png){: .center-image }
 
-Aşağıdaki komutun sonuna -y parametresini eklerseniz benim gibi kurulum sırasında tekrar enter ve sonrasında Y tuşuna basmanıza gerek kalmaz
+Aşağıdaki komutun sonuna -y parametresini eklerseniz benim gibi kurulum sırasında Y tuşuna basarak onay vermek zorunda kalmazsınız.
 
 {% highlight c %}
 apt-get install haproxy=2.7.\*
@@ -89,15 +89,16 @@ Fronted, backend veya listen bölümünde ayarlayabileceğiniz parametlerin ço�
 Bu bölümde haproxy istatisklerini görmek için tanımlama yapabiliriz.
 Örnek görsel aşağıdaki şekildedir.
 
-****Frontend:**
+**Frontend:**
 
 Bu alanda bir frontend oluştururuz ve gideceği backend serverını belirtiriz. Yine bu alanda hangi protokol ve port üzerinden iletişim kurulacağı belirtilir.
 
-****Backend:**
+**Backend:**
 
 Front end alanında oluşturulan frontendler için isteklerin yönlendirileceği serverlerı belirtiriz. Yine bu alanda hangi protokol ve port üzerinden iletişim kurulacağı belirtilir.
 
 Önemli olduğunu düşündüğüm bu başlıkları açıkladıktan sonra şimdi örnek bir **conf file** düzenleyebiliriz.
+Bunun için haproxy.cfg dosyasının olduğu yere gidelim.
 
 {% highlight c %}
 cd /etc/haproxy/
@@ -112,7 +113,8 @@ Nano ile dosyayı düzeledikten sonra **CTRL + X** yapıp çıkarken **Y** tuşu
 sudo nano haproxy.cfg
 {% endhighlight %}
 
-Aşağıdaki örnek # simgesinden sonra altındaki satırın hangi amaçlı kullanıldığını belirtmeye çalıştım.
+Aşağıdaki örnekte # simgesinden sonra altındaki satırın hangi amaçlı kullanıldığını belirtmeye çalıştım.
+Conf kopyala yapıştır ile alıp kendinize göre düzenleyebilirsiniz.
 
 {% highlight c %}
 global
@@ -120,6 +122,7 @@ global
         log /dev/log    local1 notice
         chroot /var/lib/haproxy
         stats socket /run/haproxy/admin.sock mode 660 level admin
+
         # gelen isteklere 30s içinde server'dan cevap dönmezse istekler timeout alacaktır.
         stats timeout 30s
         user haproxy
@@ -140,6 +143,7 @@ defaults
         mode    http
         option  httplog
         option  dontlognull
+
         # load balance türü roundrobin olarak belirlendi.
         balance roundrobin
         timeout connect 5000
@@ -156,26 +160,37 @@ defaults
         errorfile 504 /etc/haproxy/errors/504.http
 
 listen stats
-
+        # istatisk ekranını için erişilecek adres tanımı
         bind 192.168.2.81:8080
         mode http
+
+        # istatistik ekranını açıp kapatmak için düzenleme yapabilirsiniz.
         stats enable
         stats realm FURKAN
+
         # haproxy istatisklerini görebileceğiniz ekran url suffixi
         # ben bu şekilde bu ekrana erişeceğim >>> http://192.168.2.81:8080/stats 
         stats uri /stats
         # istatistik ekranına giriş için kullanıcıadı:parola bilgisi
         stats auth furkan:1234
 
-frontend furkanbilgin_frontend
+frontend furkanbilgin_frontend        
+        # hangi port üzerinden gelen isteklerin dinleneceğini söylüyoruz
         bind *:80
+
+        # www.furkanbilgin.com için kayıt ekliyoruz.
         acl furkanbilgin_frontend  hdr(host) -i www.furkanbilgin.com
+
+        # furkanbilgin.com için kayıt ekliyoruz.
         acl furkanbilgin_frontend  hdr(host) -i furkanbilgin.com
+
+        # furkanbilgin_frontend için hangi backend configuration kullanacağını belirtiyoruz.
         use_backend furkanbilgin_backend if furkanbilgin_frontend
 
 backend furkanbilgin_backend
         # f1 ibaresi istatistik ekranında ilgili servera isim vermek içindir.
         server f1 192.168.2.141:80
+
         # f2 ibaresi istatistik ekranında ilgili servera isim vermek içindir.
         server f2 192.168.2.96:80
 {% endhighlight %}
@@ -205,6 +220,25 @@ systemctl status haproxy
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-statistic.png){: .center-image }
 
+Haproxye gelen isteklerin loglarına aşağıdaki yerden ulaşabilirsiniz.
+
+{% highlight c %}
+cd /var/log
+{% endhighlight %}
+
+Log dosyasındaki son 100 satırı görmek için aşağıdaki komutu çalıştırabilirsiniz.
+
+{% highlight c %}
+tail -n 100 /var/log/haproxy.log
+{% endhighlight %}
+
+Aşağıdaki görselde hangi isteğin hangi servera iletildiğini kırmızı ile daire içine aldım.
+
+f1 ve f2 isimleri haproxy.cfg dosyası içinde backend serverlara verdiğimiz takma isimlerdir.
+
+![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-log.png){: .center-image }
+
+
 **LAB Ortamı hakkında açıklama**
 
 Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal sunucu kurdum.
@@ -224,4 +258,4 @@ Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal 
 
 Bu sayede istekler haproxy üzerinden web sunucularına yönlendirilmiş oldu.
 
-**Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen e-mail atınız.**
+**Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href=" furkanbilgin@windowslive.com">e-mail atınız</a>.**
