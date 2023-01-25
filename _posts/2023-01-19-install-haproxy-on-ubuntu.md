@@ -1,5 +1,5 @@
 ---
-title: 'Ubunut 20.04 Sunucu Üzerine HAProxy Kurulumu'
+title: 'Ubuntu 20.04 Sunucu Üzerine HAProxy Kurulumu'
 date: 2023-01-19
 author: Furkan
 layout: post
