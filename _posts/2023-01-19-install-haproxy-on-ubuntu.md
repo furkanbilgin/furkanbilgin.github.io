@@ -17,7 +17,7 @@ Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda term
 
 HAProxy, yüksek trafik alan veya yedeklilik sağlamak istediğiniz TCP ve HTTP protokolünü kullanan uygulamalarınız için yük dengeler ve proxy hizmeti sunar. 
 
-HAProxy open source bir üründür. Ürünün enterprise versionu ise ücretlidir. Bu lisans kapsamında kurumsal destek almakla birlikte farklı özelliklerindende yararlanabilirsiniz.
+HAProxy open source bir üründür. Ürünün enterprise versionu ise ücretlidir. Bu lisans kapsamında kurumsal destek almakla birlikte farklı özelliklerindende yararlanabilirsiniz. Biz bugün bu ürünün ücretsiz versionunu üzerinden ilerleyeceğiz.
 
 Her zaman olduğu gibi  ürünün kendi resmi sitesine gidelim ve kurulum için gerekli komutları alalım
 https://haproxy.debian.net/
