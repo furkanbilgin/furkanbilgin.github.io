@@ -249,7 +249,7 @@ Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal 
 
 192.168.2.96  : furkanbilgin.com web sunucusu 
 
-İnternet tarayıcısı üzerinden yaptığım isteklerin haproxy gitmesi için bilgisayarımda host dosyasına aşağıdaki bilgileri ekledim.
+İnternet tarayıcısı üzerinden yaptığım isteklerin haproxy gitmesi için bilgisayarımda C:\Windows\System32\drivers\etc\hosts dosyasına aşağıdaki bilgileri ekledim.
 
 {% highlight c %}
 192.168.2.81 furkanbilgin.com
