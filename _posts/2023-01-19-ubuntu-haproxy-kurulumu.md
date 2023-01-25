@@ -3,7 +3,7 @@ title: 'Ubunut 20.04 Sunucu Üzerine Haproxy Kurulumu'
 date: 2023-01-19
 author: Furkan
 layout: post
-permalink: /install-ubuntu-haproxy/
+permalink: /install-haproxy-ubuntu/
 categories: haproxy, loadbalance, haproxy, ubuntu, centos, rhel
 tags: [haproxy,loadbalance,ubuntu,centos ,rhel ,centos , linux]
 img: posts/2023-01-19-ubuntu-haproxy-kurulumu/cover.png
