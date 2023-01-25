@@ -76,20 +76,23 @@ systemctl status haproxy
 Şimdi haproxy ile proxy işleminin nasıl yapılacağını göreceğiz.
 Buna başlamadan önce bazı kavramları açıklamak istiyorum.
 
-Global : 
+**Global :**
+
 Yapılandırma(haproxy.conf) dosyanızın en üstünde görünür. Kabul edilecek maksimum bağlantı sayısı, günlüklerin(logların) nereye iletileceği ve HAProxy Enterprise modüllerinin yükleneceği yol gibi yönergeleri tanımladığımız alandır.
 
-Default
+**Default:**
+
 Fronted, backend veya listen bölümünde ayarlayabileceğiniz parametlerin çoğunu buradan varsayılan olarak belirleyebilirsiniz. Daha sonra frontend veya backend kısmında bu ayarları tekrar belirtirseniz frontend veya backend altındaki belirttiğiniz parametreler aktif olmuş olur.
 
-Listen
+**Listen:**
+
 Bu bölümde haproxy istatisklerini görmek için tanımlama yapabiliriz.
 Örnek görsel aşağıdaki şekildedir.
 
-Frontend
+**Frontend:**
 Bu alanda bir frontend oluştururuz ve gideceği backend serverını belirtiriz. Yine bu alanda hangi protokol ve port üzerinden iletişim kurulacağı belirtilir.
 
-Backend
+**Backend:**
 Front end alanında oluşturulan frontendler için isteklerin yönlendirileceği serverlerı belirtiriz. Yine bu alanda hangi protokol ve port üzerinden iletişim kurulacağı belirtilir.
 
 Önemli olduğunu düşündüğüm bu başlıkları açıkladıktan sonra şimdi örnek bir conf düzenleyebiliriz.
