@@ -5,7 +5,7 @@ author: Furkan
 layout: post
 permalink: /install-haproxy-on-ubuntu/
 categories: HAProxy, loadbalance, ubuntu, centos, rhel
-tags: [HAProxy,loadbalance,ubuntu,centos ,rhel , linux]
+tags: [HAProxy, loadbalance, ubuntu, centos, rhel, linux]
 img: posts/2023-01-19-ubuntu-HAProxy-kurulumu/cover.png
 ---
 
