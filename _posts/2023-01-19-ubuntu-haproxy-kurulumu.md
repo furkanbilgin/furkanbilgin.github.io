@@ -209,9 +209,11 @@ systemctl status haproxy
 
 Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal sunucu kurdum.
 
-192.168.2.81  : Haproxy server
-192.168.2.141 : furkanbilgin.com web sunucusu
-192.168.2.96  : furkanbilgin.com web sunucusu
+192.168.2.81  : Haproxy server 
+
+192.168.2.141 : furkanbilgin.com web sunucusu 
+
+192.168.2.96  : furkanbilgin.com web sunucusu 
 
 İnternet tarayıcısı üzerinden yaptığım isteklerin haproxy gitmesi için bilgisayarımda host dosyasına aşağıdaki bilgileri ekledim.
 
@@ -221,4 +223,5 @@ Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal 
 {% endhighlight %}
 
 Bu sayede istekler haproxy üzerinden web sunucularına yönlendirilmiş oldu.
+
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen e-mail atınız.**
