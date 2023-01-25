@@ -1,17 +1,21 @@
 ---
-title: 'Ubunut 20.04 Sunucu Üzerine Haproxy Kurulumu'
+title: 'Ubunut 20.04 Sunucu Üzerine HAProxy Kurulumu'
 date: 2023-01-19
 author: Furkan
 layout: post
-permalink: /install-haproxy-ubuntu/
-categories: haproxy, loadbalance, haproxy, ubuntu, centos, rhel
-tags: [haproxy,loadbalance,ubuntu,centos ,rhel , linux]
-img: posts/2023-01-19-ubuntu-haproxy-kurulumu/cover.png
+permalink: /install-HAProxy-ubuntu/
+categories: HAProxy, loadbalance, ubuntu, centos, rhel
+tags: [HAProxy,loadbalance,ubuntu,centos ,rhel , linux]
+img: posts/2023-01-19-ubuntu-HAProxy-kurulumu/cover.png
 ---
 
-Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda terminal üzerinden haproxy yükleyerek configurasyonları hakkında bilgi vereceğim.
+Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda terminal üzerinden HAProxy yükleyerek configurasyonları hakkında bilgi vereceğim.
 
 İşlemlere başlamadan önce sunucunuzun yedeğini almanızı tavsiye ederim. (snapshot, full backup vs.)
+
+**HAProxy Nedir?**
+
+HAProxy, yüksek trafik alan veya yedeklilik sağlamak istediğiniz TCP ve HTTP protokolünü kullanan uygulamalarınız için yük dengeler ve proxy hizmeti sağlamaktadır.
 
 Her zaman olduğu gibi  ürünün kendi resmi sitesine gidelim ve kurulum için gerekli komutları alalım
 https://haproxy.debian.net/
@@ -19,11 +23,11 @@ https://haproxy.debian.net/
 Sunucuda ubuntunun hangi sürümünün kurulu olduğunu anlamak için aşağıdaki komutu çalıştırabilirsiniz.
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/hostnamectl.png){: .center-image }
 
-Ben ubuntu 20.04.5 üzerine bu kurulumu yaptığım tarihteki son haproxy sürümünün kurulumunu yapacağım için seçimlerimi bu yönde yaptım.
+Ben ubuntu 20.04.5 üzerine bu kurulumu yaptığım tarihteki son HAProxy sürümünün kurulumunu yapacağım için seçimlerimi bu yönde yaptım.
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/command.png){: .center-image }
 
-1- Adım: haproxy yüklemek için sırasıyla aşağıdaki komutlarımızı çalıştıralım.
+1- Adım: HAProxy yüklemek için sırasıyla aşağıdaki komutlarımızı çalıştıralım.
 
 {% highlight c %}
 apt-get install --no-install-recommends software-properties-common
@@ -57,7 +61,7 @@ apt-get install haproxy=2.7.\* -y
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/haproxy-v.png){: .center-image }
 
-3- Adım: Kurulum bittiğine göre şimdi sunucu restart olduktan sonra haproxy servisinin otomatik olarak yeniden başlaması için aşağıdaki komutu çalıştırıyoruz.
+3- Adım: Kurulum bittiğine göre şimdi sunucu restart olduktan sonra HAProxy servisinin otomatik olarak yeniden başlaması için aşağıdaki komutu çalıştırıyoruz.
 
 {% highlight c %}
 systemctl enable haproxy
@@ -65,7 +69,7 @@ systemctl enable haproxy
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-enable.png){: .center-image }
 
-4- Adım: Haproxy ayarlamalarına geçmeden önce son olarak haproxy durumunu sorgulamamız gerekiyor. Status çekerek servisin aktif olup olmadığını göreceğiz.
+4- Adım: Haproxy ayarlamalarına geçmeden önce son olarak HAProxy durumunu sorgulamamız gerekiyor. Status çekerek servisin aktif olup olmadığını göreceğiz.
 
 {% highlight c %}
 systemctl status haproxy
@@ -86,7 +90,7 @@ Fronted, backend veya listen bölümünde ayarlayabileceğiniz parametlerin ço�
 
 **Listen:**
 
-Bu bölümde haproxy istatisklerini görmek için tanımlama yapabiliriz.
+Bu bölümde HAProxy istatisklerini görmek için tanımlama yapabiliriz.
 Örnek görsel aşağıdaki şekildedir.
 
 **Frontend:**
@@ -220,7 +224,7 @@ systemctl status haproxy
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-statistic.png){: .center-image }
 
-Haproxye gelen isteklerin loglarına aşağıdaki yerden ulaşabilirsiniz.
+HAProxy gelen isteklerin loglarına aşağıdaki yerden ulaşabilirsiniz.
 
 {% highlight c %}
 cd /var/log
@@ -242,19 +246,19 @@ f1 ve f2 isimleri haproxy.cfg dosyası içinde backend serverlara verdiğimiz ta
 
 Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal sunucu kurdum.
 
-192.168.2.81  : Haproxy server 
+192.168.2.81  : HAProxy server 
 
-192.168.2.141 : furkanbilgin.com web sunucusu 
+192.168.2.141 : furkanbilgin.com web sunucusu - 1
 
-192.168.2.96  : furkanbilgin.com web sunucusu 
+192.168.2.96  : furkanbilgin.com web sunucusu - 2
 
-İnternet tarayıcısı üzerinden yaptığım isteklerin haproxy gitmesi için bilgisayarımda C:\Windows\System32\drivers\etc\hosts dosyasına aşağıdaki bilgileri ekledim.
+İnternet tarayıcısı üzerinden yaptığım isteklerin HAProxy gitmesi için bilgisayarımda C:\Windows\System32\drivers\etc\hosts dosyasına aşağıdaki bilgileri ekledim.
 
 {% highlight c %}
 192.168.2.81 furkanbilgin.com
 192.168.2.81 www.furkanbilgin.com
 {% endhighlight %}
 
-Bu sayede istekler haproxy üzerinden web sunucularına yönlendirilmiş oldu.
+Bu sayede istekler HAProxy üzerinden web sunucularına yönlendirilmiş oldu.
 
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href=" furkanbilgin@windowslive.com">e-mail atınız</a>.**
