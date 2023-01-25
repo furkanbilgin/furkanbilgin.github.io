@@ -263,4 +263,4 @@ Bu anlatımı yapabilmek adına virtual box üzerinde 3 tane ubuntu 20.04 sanal 
 
 Bu sayede istekler HAProxy üzerinden web sunucularına yönlendirilmiş oldu.
 
-**Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href=" furkanbilgin@windowslive.com">e-mail atınız</a>.**
+**Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href="mailto:furkanbilgin@windowslive.com" target="_blank">e-mail atınız</a>.**
