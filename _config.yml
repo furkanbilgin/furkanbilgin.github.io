@@ -1,7 +1,7 @@
 # Site settings
 site: Furkan Bilgin
-title:  Personal Research Blog - Windows, Linux ,System
-keywords:  Furkan Bilgin, blog, Windows, Linux ,System
+title:  Personal Research Blog - Windows, Linux, System, Devops, Cloud
+keywords:  Furkan Bilgin, blog, Windows, Linux ,System, Devops, Cloud
 description: >-
    Furkan Bilgin Personal Blog
 lang: en-US
@@ -14,7 +14,7 @@ discus-identifier: XX
 # Author settings
 author:
   name:  Furkan Bilgin
-  bio: System Manager @Tekhnelogos </br> Founder @SentezOfis </br> furkanbilgin@windowslive.com
+  bio: Cloud&System Devops Engineer @Digiturk / Formerly System Manager @Tekhnelogos </br> Founder @SentezOfis </br> furkanbilgin@windowslive.com
   picture: assets/img/furkan-bilgin.jpg
   github: furkanbilgin # github username
   twitter: furkanbilginn # twitter username
