@@ -13,13 +13,13 @@ Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda term
 
 İşlemlere başlamadan önce sunucunuzun yedeğini almanızı tavsiye ederim. (snapshot, full backup vs.)
 
-Öncelikle ürünün kendi resmi sitesine gidelim ve kurulum için gerekli komutları alalım
+Her zaman olduğu gibi  ürünün kendi resmi sitesine gidelim ve kurulum için gerekli komutları alalım
 https://haproxy.debian.net/
 
 Sunucuda ubuntunun hangi sürümünün kurulu olduğunu anlamak için aşağıdaki komutu çalıştırabilirsiniz.
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/hostnamectl.png){: .center-image }
 
-Ben ubuntu 20.04.5 üzerine bu tarihteki son haproxy sürümünün kurulumunu yapacağım için seçimlerimi bu yönde yaptım.
+Ben ubuntu 20.04.5 üzerine bu kurulumu yaptığım tarihteki son haproxy sürümünün kurulumunu yapacağım için seçimlerimi bu yönde yaptım.
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/command.png){: .center-image }
 
@@ -76,7 +76,7 @@ systemctl status haproxy
 Şimdi haproxy ile proxy işleminin nasıl yapılacağını göreceğiz.
 Buna başlamadan önce bazı kavramları açıklamak istiyorum.
 
-**Global :**
+**Global:**
 
 Yapılandırma(haproxy.conf) dosyanızın en üstünde görünür. Kabul edilecek maksimum bağlantı sayısı, günlüklerin(logların) nereye iletileceği ve HAProxy Enterprise modüllerinin yükleneceği yol gibi yönergeleri tanımladığımız alandır.
 
@@ -237,7 +237,6 @@ Aşağıdaki görselde hangi isteğin hangi servera iletildiğini kırmızı ile
 f1 ve f2 isimleri haproxy.cfg dosyası içinde backend serverlara verdiğimiz takma isimlerdir.
 
 ![Picture description](/assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/ha-log.png){: .center-image }
-
 
 **LAB Ortamı hakkında açıklama**
 
