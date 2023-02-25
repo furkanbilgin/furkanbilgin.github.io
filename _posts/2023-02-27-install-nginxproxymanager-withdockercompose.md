@@ -127,7 +127,7 @@ Password: changeme
 
 Giriş yaptıktan hemen sonra admin **user email adresini değiştirmenizi** isteyecektir.
 
-![Picture description](/assets/img/post/snginx-proxy-manager/login-2.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/login-2.png){: .center-image }
 
 Eposta adresini değiştirdikten sonra **defaul password** değişimini isteyecektir.
 
