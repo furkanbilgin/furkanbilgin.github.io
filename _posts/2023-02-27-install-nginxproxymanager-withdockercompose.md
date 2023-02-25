@@ -23,7 +23,8 @@ Proxy sunucusu, client ile server arasında bir köprü görevi görür.
 Proxy serverlar kullanım amacınıza bağlı olarak değişen düzeylerde işlevsellik, güvenlik ve gizlilik sağlar.
 Proxy server kullanıldığında servera gönderilen istekler proxy üzerinden geçerek servera ulaşır. Aynı şekilde dönen cevaplarda proxy üzerinden clienta döner. 
 
-![Picture description](/assets/img/postsnginx-proxy-manager/nginc.drawio.png){: .center-image }
+
+![Picture description](/assets/img/posts/nginx-proxy-manager/nginc.drawio.png){: .center-image }
 
 **Nginx Nedir**
 
@@ -48,7 +49,7 @@ Kuruluma başlamadan önce yedeğinizi mutlaka alınız. Öncelikle ben update i
 sudo apt-get update -y
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/apt-get-update.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/apt-get-update.png){: .center-image }
 
 Şimdi docker uygulamalarımı koyduğum bir klasör açıyorum onunda içinde nginx proxy manager compose dosyasını koymak için **nginx-proxy-manager** isminde bir klasör oluşturuyorum ve oluşturduğum klasörün içine giriyorum.
 
@@ -58,7 +59,7 @@ cd docker
 mkdir nginx-proxy-manager
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/mkdir-nginx.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/mkdir-nginx.png){: .center-image }
 
 Oluşturduğumuz klasörün içinde docker-compose.yml ismiyle bir dosya açıyoruz. Burada nginx proxy manager için gerekli docker compose tanımlamalarını yapacağız.
 
@@ -66,7 +67,7 @@ Oluşturduğumuz klasörün içinde docker-compose.yml ismiyle bir dosya açıyo
 nano docker-compose.yml
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/nano-docker-compose.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/nano-docker-compose.png){: .center-image }
 
 Aşağıdaki kodun tamamını dosyanın içine yapıştırınız. Boşluk ve syntax kaynaklı hatalar alabilirsiniz.
 Güncel docker compose dosyasına <a href="https://nginxproxymanager.com/setup/" target="_blank"> bu linkten ulaşabilirsiniz.</a>  
@@ -96,7 +97,7 @@ Conf dosyamızı kayıt edip çıktıktan sonra docker compose up edebiliriz.
 docker compose up -d
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/docker-compose-up.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/docker-compose-up.png){: .center-image }
 
 Kurulum bittikten sonra çalışan containerların listesini çekebilir ve durumlarını görebiliriz.
 
@@ -104,7 +105,7 @@ Kurulum bittikten sonra çalışan containerların listesini çekebilir ve durum
 docker ps
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/docker-ps.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/docker-ps.png){: .center-image }
 
 Eğer container up olmazsa önce conf dosyasını kontrol edin bu yeterli olmazsa container loglarını görüntüleyin.
 
@@ -112,7 +113,7 @@ Eğer container up olmazsa önce conf dosyasını kontrol edin bu yeterli olmazs
 docker compose logs
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/logs.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/logs.png){: .center-image }
 
 Şimdi sunucu ip adresimizin sonuna admin web portunu ekleyerek admin paneline girebiliriz.
 Ben http://192.168.2.71:81 yazarak giriyorum. Defaul admin user bilgileri ile giriş yaptıktan sonra bu bilgileri değiştirmenizi isteyecektir.
@@ -122,19 +123,19 @@ Email:    admin@example.com
 Password: changeme
 {% endhighlight %}
 
-![Picture description](/assets/img/postsnginx-proxy-manager/login-1.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/login-1.png){: .center-image }
 
 Giriş yaptıktan hemen sonra admin **user email adresini değiştirmenizi** isteyecektir.
 
-![Picture description](/assets/img/postsnginx-proxy-manager/login-2.png){: .center-image }
+![Picture description](/assets/img/post/snginx-proxy-manager/login-2.png){: .center-image }
 
 Eposta adresini değiştirdikten sonra **defaul password** değişimini isteyecektir.
 
-![Picture description](/assets/img/postsnginx-proxy-manager/login-3.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/login-3.png){: .center-image }
 
 Tüm bunları yaptıktan sonra herşey hazır hale gelmiştir.
 
-![Picture description](/assets/img/postsnginx-proxy-manager/homepage.png){: .center-image }
+![Picture description](/assets/img/posts/nginx-proxy-manager/homepage.png){: .center-image }
 
 Resmi sitesinden örnek uygulamaları<a href="https://nginxproxymanager.com/screenshots/" target="_blank"> bu linke tıklayarak inceleyebilirsiniz.</a>  
 
