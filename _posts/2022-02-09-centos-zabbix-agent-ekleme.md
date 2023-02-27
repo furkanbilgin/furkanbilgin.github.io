@@ -1,12 +1,14 @@
 ---
 title: 'Centos Sunucu Üzerine Zabbix Agent Yüklemek'
 date: 2022-02-09
-author: Furkan
+author: Furkan Bilgin
 layout: post
 permalink: /install-zabbix-agent-centos7/
 categories: centos, rhel
 tags: [centos ,rhel ,centos , linux, zabbix]
-img: posts/install-zabbix-agent-centos7/cover.png
+img: /assets/img/posts/install-zabbix-agent-centos7/cover.png
+description: 'Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.'
+
 ---
 
 Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.
