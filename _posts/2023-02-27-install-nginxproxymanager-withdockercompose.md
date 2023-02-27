@@ -142,5 +142,4 @@ Tüm bunları yaptıktan sonra herşey hazır hale gelmiştir.
 Resmi sitesinden örnek uygulamaları<a href="https://nginxproxymanager.com/screenshots/" target="_blank"> bu linke tıklayarak inceleyebilirsiniz.</a>  
 
 
-
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href="mailto:furkanbilgin@windowslive.com" target="_blank">e-mail atınız</a>.**
