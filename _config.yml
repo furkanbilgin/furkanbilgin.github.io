@@ -8,7 +8,7 @@ lang: en-US
 timezone:  Europe/Istanbul
 repo: https://github.com/furkanbilgin/furkanbilgin.github.io # site repo [optional]
 google_verify:      XX # Put your Google Verification here
-google_analytics:   UA-73661033-5 # Put your Google Analytics code
+google_analytics:   G-GW78LTJVMS   # Put your Google Analytics code
 discus-identifier: XX
 
 # Author settings
