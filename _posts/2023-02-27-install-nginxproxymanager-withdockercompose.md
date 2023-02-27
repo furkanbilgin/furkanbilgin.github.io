@@ -1,7 +1,7 @@
 ---
 title: 'Ubuntu 20.04 Sunucu Üzerine Docker Compose ile Nginx Proxy Manager Kurulumu'
 date: 2023-02-27
-author: Furkan
+author: Furkan Bilgin
 layout: post
 permalink: /install-nginxproxymanager-withdockercompose/
 categories: Nginx, Proxy, Manager, loadbalance, ubuntu, centos, rhel, docker, compose

@@ -8,10 +8,14 @@
 		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 		<meta name="keywords" content="{% if page.tags %}{{page.tags}}{% else %}{{site.keywords}}{% endif %}">
 		<base href="{{ site.url }}{{ site.baseurl }}" />
+
 		<meta name="image" property="og:image" content="{% if page.img %}{{page.img}}{% else %}{{site.img}}{% endif %}">
+		<meta name="author" content="{% if page.author %}{{page.author}}{% else %}{{site.description}}{% endif %}">
+		
 		{% if page.date %}
     	<meta content="{{ page.date | date_to_xmlschema }}" property="article:published_time">
     	<meta content="{{ site.url }}/about/" property="article:author">
+		
   		{% endif %}
 		<meta property="og:site_name" content="{{site.title}}">
 		<meta property="og:type" content="{% if page.title %}article{% else %}website{% endif %}" />
