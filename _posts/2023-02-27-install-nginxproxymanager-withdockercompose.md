@@ -20,8 +20,6 @@ Eğer kurulu değilse, kurulum yönergesi için <a href="https://docs.docker.com
 
 İşlemlere başlamadan önce sunucunuzun yedeğini almanızı tavsiye ederim. (snapshot, full backup vs.)
 
-![Picture description](/assets/img/posts/nginx-proxy-manager/cover.png){: .center-image }
-
 **Proxy Server Nedir?**
 
 Proxy sunucusu, client ile server arasında bir köprü görevi görür. 
