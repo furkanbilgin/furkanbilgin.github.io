@@ -6,7 +6,7 @@ layout: post
 permalink: /install-haproxy-on-ubuntu/
 categories: HAProxy, loadbalance, ubuntu, centos, rhel
 tags: [HAProxy, loadbalance, ubuntu, centos, rhel, linux]
-img: /assets/img/posts/2023-01-19-ubuntu-HAProxy-kurulumu/cover.png
+img: /assets/img/posts/2023-01-19-ubuntu-haproxy-kurulumu/cover.png
 description: 'Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda terminal üzerinden HAProxy yükleyerek configurasyonları hakkında bilgi vereceğim.'
 
 ---
