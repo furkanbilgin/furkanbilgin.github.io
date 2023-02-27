@@ -143,5 +143,4 @@ Resmi sitesinden örnek uygulamaları<a href="https://nginxproxymanager.com/scre
 
 <meta name="image" property="og:image" content="/assets/img/posts/nginx-proxy-manager/cover.png">
 
-
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href="mailto:furkanbilgin@windowslive.com" target="_blank">e-mail atınız</a>.**
