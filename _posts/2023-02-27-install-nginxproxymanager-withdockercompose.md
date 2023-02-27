@@ -73,6 +73,7 @@ Aşağıdaki kodun tamamını dosyanın içine yapıştırınız. Boşluk ve syn
 Güncel docker compose dosyasına <a href="https://nginxproxymanager.com/setup/" target="_blank"> bu linkten ulaşabilirsiniz.</a>  
 
 {% highlight c %}
+
 version: "3"
 services:
   app:
@@ -85,9 +86,11 @@ services:
       - '81:81' # Admin Web Port
       # Add any other Stream port you want to expose
       # - '21:21' # FTP
+      
     volumes:
       - ./data:/data
       - ./letsencrypt:/etc/letsencrypt
+
 {% endhighlight %}
 
 Conf dosyamızı kayıt edip çıktıktan sonra docker compose up edebiliriz.
