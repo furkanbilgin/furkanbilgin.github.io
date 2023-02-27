@@ -141,8 +141,7 @@ Tüm bunları yaptıktan sonra herşey hazır hale gelmiştir.
 
 Resmi sitesinden örnek uygulamaları<a href="https://nginxproxymanager.com/screenshots/" target="_blank"> bu linke tıklayarak inceleyebilirsiniz.</a>  
 
-<time datetime="{{ page.date}}">{{ page.date }}</time>
-
-
+<time datetime="{{ page.date}}"> {{ page.date }} </time>
+<time datetime="{{ page.date }}"> {{ page.date }}</time>.
 
 **Not: Bazı kelime ve kavramları yanlış kullanmış olabilirim. Düzeltme için lütfen <a href="mailto:furkanbilgin@windowslive.com" target="_blank">e-mail atınız</a>.**
