@@ -35,8 +35,9 @@
 		<meta property="twitter:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
 		<meta property="twitter:image" content="{% if page.img %}{{page.img}}{% else %}{{site.img}}{% endif %}">
 
-		<link rel="stylesheet" href="assets/css/highlight.css">
-		<link rel="stylesheet" href="assets/css/style.css">
+		<!-- <link rel="stylesheet" href="assets/css/highlight.css"> -->
+		<link rel="stylesheet" href="{{ "assets/css/highlight.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" >
+		<!-- <link rel="stylesheet" href="assets/css/style.css"> -->
 		<link rel="stylesheet" href="{{ "assets/css/style.css" | prepend: site.baseurl }}?{{ site.time | date: '%s%N' }}" >
 		<link rel="shortcut icon" href="assets/images/favicon.png" />
 		<link rel="alternate" type="application/atom+xml" title="{{ site.title }}" href="{{ site.url }}{{ site.baseurl }}/atom.xml">
