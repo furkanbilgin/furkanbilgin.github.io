@@ -1,7 +1,7 @@
 ---
 title: 'Ubuntu 20.04 Sunucu Üzerinde Disk Genişletme (Disk Extend)'
 date: 2021-09-28
-author: Furkan
+author: Furkan Bilgin
 layout: post
 permalink: /ubuntu-disk-genisletme/
 categories: ubuntu

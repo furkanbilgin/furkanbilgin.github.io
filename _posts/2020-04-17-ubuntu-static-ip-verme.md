@@ -1,7 +1,7 @@
 ---
 title: 'Ubuntu Tabanlı İşletim Sistemlerinde Static Ip Tanımlama'
-date: 2020-04-17T00:00:00+00:00
-author: Furkan
+date: 2020-04-17
+author: Furkan Bilgin
 layout: post
 permalink: /ubuntu-tabanli-isletim-sistemlerinde-static-ip-tanimlama/
 categories: Ubuntu

@@ -1,7 +1,7 @@
 ---
 title: 'Windows Server IIS Üzerinde Ücretsiz SSL Sertifikası Tanımlama'
-date: 2020-05-02T00:00:00+00:00
-author: Furkan
+date: 2020-05-02
+author: Furkan Bilgin
 layout: post
 permalink: /iis-uzerinde-ucretsiz-ssl-sertifikasi-tanimlama/
 categories: Windows

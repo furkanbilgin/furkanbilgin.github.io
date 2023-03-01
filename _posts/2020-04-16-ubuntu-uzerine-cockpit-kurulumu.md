@@ -1,7 +1,7 @@
 ---
 title: 'Ubuntu Tabanlı Sistemlere Cockpit Kurulumu'
 date: 2020-04-12T00:00:00+00:00
-author: Furkan
+author: Furkan Bilgin
 layout: post
 permalink: /ubuntu-uzerine-cockpit-kurulumu/
 categories: Ubuntu
