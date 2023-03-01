@@ -6,9 +6,9 @@ layout: post
 permalink: /iis-uzerinde-ucretsiz-ssl-sertifikasi-tanimlama/
 categories: Windows
 tags: [windows, iis, ssl]
-img: posts/ssl/win-acme.png
+img: /assets/img/posts/ssl/win-acme.png
+description: 'Bu öğreticide Win-Acme2 clientını kullanarak IIS üzerinde barındırdığımız web sitelerimiz için ücretsiz SSL sertifikası oluşturmayı göreceğiz.'
 ---
-
 
 Bu öğreticide Win-Acme2 clientını kullanarak IIS üzerinde barındırdığımız web sitelerimiz için ücretsiz SSL sertifikası oluşturmayı göreceğiz.
 

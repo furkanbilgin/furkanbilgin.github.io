@@ -8,7 +8,6 @@ categories: centos, rhel
 tags: [centos ,rhel ,centos , linux, zabbix]
 img: /assets/img/posts/install-zabbix-agent-centos7/cover.png
 description: 'Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.'
-
 ---
 
 Bu öğreticide sizlerle Centos 7 işletim sistemine sahip bir sunucuda terminal üzerinden zabbix agent yükleyerek zabbix server ile nasıl takip edilebileceğini göreceğiz.

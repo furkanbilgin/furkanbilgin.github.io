@@ -8,8 +8,6 @@ categories: Nginx, Proxy, Manager, loadbalance, ubuntu, centos, rhel, docker, co
 tags: [Nginx, loadbalance, Proxy, Reverse Proxy, ubuntu, centos, rhel, linux]
 img: /assets/img/posts/nginx-proxy-manager/cover.png
 description: 'Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda docker compose ile Nginx Proxy Manager kurulumunu göreceğiz.'
- 
-
 ---
 
 Bu öğreticide sizlerle Ubuntu 20.04 işletim sistemine sahip bir sunucuda docker compose ile Nginx Proxy Manager kurulumunu göreceğiz.
