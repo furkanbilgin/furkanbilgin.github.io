@@ -61,9 +61,13 @@ foreach ($Subscription in $AllSubscription) {
         $tlsVersion = (Get-AzStorageAccount -Name $storageAccountName -ResourceGroupName  $resourceGroupName).MinimumTlsVersion
         $SubName = $Subscription.Name                                   
 
-        Write-Host "Storage account: $storageAccountName TLS sürümü: $tlsVersion"                       
+        Write-Host "Storage account: $storageAccountName TLS sürümü: $tlsVersion | SubscriptionName: $SubName | ResourceGroupName: $resourceGroupName"
     }
     
 }
 
 {% endhighlight %}
+
+Örnek powershell çıktısı aşağıdaki şekildedir.
+
+![Picture description](/assets/img/posts/storage-account/example-screen-shot.png){: .center-image }
