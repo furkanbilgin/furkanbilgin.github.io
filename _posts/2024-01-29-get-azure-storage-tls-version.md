@@ -1,5 +1,5 @@
 ---
-title: 'Azure'daki Storage Account'ların TLS Sürümlerini Powershell ile Denetleme Rehberi'
+title: 'Azuredaki Storage Accountların TLS Sürümlerini Powershell ile Denetleme Rehberi'
 date: 2024-01-29T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
