@@ -35,7 +35,7 @@ try {
     $AllSubscription = Get-AzSubscription       
 }
 catch {
-    Write-Host  "Login or Get-AzSubscription işlemi sırasında hata oluştu."
+    Write-Host  "Login veya Get-AzSubscription işlemi sırasında hata oluştu."
 }
 
 #login olduktan sonra Subscriptionlar arasında gezelim.
@@ -52,7 +52,7 @@ foreach ($Subscription in $AllSubscription) {
         Write-Host "Get-AzStorageAccount işlemi sırasında hata oluştu." 
     }
 
-    # İlgili subscription'da bulunan storage accountlar içerisinde gezerek ihtiyacımız olan bilgileri elde edelim.
+    # İlgili subscription'da bulunan storage accountlar içerisinde gezerek tek tek ihtiyacımız olan bilgileri elde edelim.
     foreach ($storageAccount in $storageAccounts) {
                 
         $resourceGroupName = $storageAccount.ResourceGroupName
