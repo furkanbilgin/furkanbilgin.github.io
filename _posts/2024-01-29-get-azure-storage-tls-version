@@ -1,6 +1,6 @@
 ---
 title: 'Azure'daki Storage Account'ların TLS Sürümlerini Powershell ile Denetleme Rehberi'
-date: 2020-01-29T00:00:00+00:00
+date: 2024-01-29T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
 permalink: /get-azure-storage-tls-version/
