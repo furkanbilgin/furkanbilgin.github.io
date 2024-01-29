@@ -3,7 +3,7 @@ title: 'Azuredaki Storage Accountların TLS Sürümlerini Powershell ile Denetle
 date: 2024-01-29T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
-permalink: /get-azure-storage-tls-version/
+permalink: /get-azure-storage-account-tls-version/
 categories: Azure
 tags: [azure, cloud, storage, tls]
 img: /assets/img/posts/storage-account/storage-account.png
