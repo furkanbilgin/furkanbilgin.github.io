@@ -67,4 +67,4 @@ foreach ($Subscription  in $AllSubscription) {
 
 Örnek powershell çıktısı aşağıdaki şekildedir.
 
-![Picture description](/assets/img/posts/get-azvm/example-screen-shot.png){: .center-image }
+![Picture description](/assets/img/posts/get-azvm/example-screen-shot1.png){: .center-image }
