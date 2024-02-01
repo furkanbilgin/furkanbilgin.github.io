@@ -23,7 +23,7 @@ Microsoft Azure'da bulunan virtual machinelere ihtiyacımız olduğunda aşağı
 #login işlemini yapalım.
 try {
     # YILDIZ * ile işaretlenmiş alana tenant ID yazınız.    
-    #Connect-AzAccount -Tenant ****-*****-***-******-****  
+    Connect-AzAccount -Tenant ****-*****-***-******-****  
     #login olduktan sonra Subscriptionları çekelim.
     $AllSubscription = Get-AzSubscription       
 }
