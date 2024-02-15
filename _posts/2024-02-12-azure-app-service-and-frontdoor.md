@@ -6,7 +6,7 @@ layout: post
 permalink: /azure-app-service/
 categories: Azure
 tags: [azure, cloud, appservice, website]
-img: /assets/img/posts/appservice/microsoft-azure-virtual-machines.jpg
+img: /assets/img/posts/appservice/app-service.png
 description: 'Azure App Service ile Web Site Yayınlama'
 ---
 
@@ -73,9 +73,8 @@ Ana main tf dosyamızda alt klasörde oluşturduğumuz servis modüllerini çağ
 İlgili örnek proje repo adresi
 https://github.com/furkanbilgin/terraform/tree/main/appservice
 
-{% highlight c %} 
-{% endhighlight %}
+ 
 
 
 
-![Picture description](/assets/img/posts/appservice/example-screen-shot.png){: .center-image }
+![Picture description](/assets/img/posts/appservice/app-service.png){: .center-image }
