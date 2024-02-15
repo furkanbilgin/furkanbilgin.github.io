@@ -43,6 +43,28 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
 
 App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
 
+Peki Azure Front Door Nedir?
+
+Microsoft Azure Front Door özellikle web uygulamalarımızı hızlı, güvenli ve ölçeklenebilir bir şekilde dağıtılmasını sağlamak için tasarlanmış bir hizmettir. 
+Azure Front Door, kullanıcılara daha iyi performans, güvenlik ve yüksek erişilebilirlik sağlamaktadır.
+
+Azure Front Door'un temel özellikleri şunlardır:
+
+<b>Global Dağıtım:</b> Azure Front Door, dünya genelinde dağılmış bir ağ üzerinde hizmet vererek kullanıcılara en yakın konumdan içeriğe erişim sağlar. Bu, web uygulamalarının daha hızlı yüklenmesine olanak tanır.
+
+<b>Yük Dengeleme:</b> Azure Front Door, gelen trafikleri yönetmek ve birden çok hedef sunucuya trafikleri dengeli bir şekilde yönlendirmek için yük dengeleme özelliklerine sahiptir. Bu sayede uygulamanın ölçeklenebilirliği artar ve yüksek erişilebilirlik sağlanır.
+
+<b>Güvenlik:</b> Hizmet, DDoS saldırılarına karşı koruma ve Web Application Firewall (WAF) özellikleri ile geliştirilmiş güvenlik sağlar. Web uygulamalarınızı kötü amaçlı trafiğe karşı korur.
+
+<b>SSL Termination:</b> Azure Front Door, SSL/TLS sertifikalarını yönetir. App service katmanında ayrıca ssl eklemenize gerek kalmaz.
+
+Bu özellikler sayesinde, Azure Front Door, web uygulamalarınızı daha güvenli, hızlı ve ölçeklenebilir bir şekilde sunmanıza yardımcı olan bir hizmettir.
+Daha fazla front door detayı için <a href="https://learn.microsoft.com/tr-tr/azure/frontdoor/front-door-overview" target="_blank">burayı inceleyiniz.</a>
+
+![Picture description](/assets/img/posts/appservice/front-door-overview-expanded.png){: .center-image }
+
+Şimdi front door için gerekli terraform resourcelarına bakalım.
+
 <b>azurerm_cdn_frontdoor_profile </b>: Frontdoora ait plan burada belirtilir.  
     Detaylara <a href="https://azure.microsoft.com/tr-tr/pricing/details/frontdoor/" target="_blank">buradan bakınız</a>
 
