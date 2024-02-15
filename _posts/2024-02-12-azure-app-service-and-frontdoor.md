@@ -65,10 +65,8 @@ App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resou
 <b>azurerm_cdn_frontdoor_custom_domain_association </b>: Oluşturulan custom domaini route resource bağlarız. Eğer custom domain eklersek bu resourceda eklenmek zorundadır.
 	
 
-İlgili servislerin terraform tarafında oluşturacağımız kaynaklarından bahsettiğimize göre artık kod tarafına geçebiliriz.
-Her bir servisi bir module gibi planlayarak yapacağız.
-Ana main tf dosyamızda alt klasörde oluşturduğumuz servis modüllerini çağıracağız.
-
-İlgili örnek proje <a href="https://github.com/furkanbilgin/terraform/tree/main/appservice" target="_blank">repo adresi</a>
+İlgili servislerin terraform tarafında oluşturacağımız kaynaklarından bahsettiğimize göre artık örnek proje repomuzu inceleyebiliriz
+Kod tarafındaki detayları reponun ilgili klasörlerindeki readme file altında belirtilmiştir.
+<a href="https://github.com/furkanbilgin/terraform/tree/main/appservice" target="_blank">repo adresi</a>
 
 ![Picture description](/assets/img/posts/appservice/app-service.png){: .center-image }
