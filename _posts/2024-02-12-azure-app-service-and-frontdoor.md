@@ -70,11 +70,6 @@ App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resou
 Her bir servisi bir module gibi planlayarak yapacağız.
 Ana main tf dosyamızda alt klasörde oluşturduğumuz servis modüllerini çağıracağız.
 
-İlgili örnek proje repo adresi
-https://github.com/furkanbilgin/terraform/tree/main/appservice
-
- 
-
-
+İlgili örnek proje <a href="https://github.com/furkanbilgin/terraform/tree/main/appservice" target="_blank">repo adresi</a>
 
 ![Picture description](/assets/img/posts/appservice/app-service.png){: .center-image }
