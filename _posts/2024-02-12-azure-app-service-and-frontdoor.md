@@ -28,18 +28,18 @@ Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentatio
 
 App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekildedir.
 
-	1- azurerm_service_plan  :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
+azurerm_service_plan  :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
 	
-    2- azurerm_windows_web_app :   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
+azurerm_windows_web_app :   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
 
-	3- azurerm_application_insights :  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsights <a href=" https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview" target="_blank"> Bakınız </a>
+azurerm_application_insights :  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsights <a href=" https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview" target="_blank"> Bakınız </a>
 	
-    4- azurerm_app_service_custom_hostname_binding :  App service oluştuğunda windows uzantılı bir domain oluşur. Bu domain ile erişmek yerine şirketimize ait domain ile erişmek için bu resource ayarlanır.
+azurerm_app_service_custom_hostname_binding :  App service oluştuğunda windows uzantılı bir domain oluşur. Bu domain ile erişmek yerine şirketimize ait domain ile erişmek için bu resource ayarlanır.
 	
-    5- azurerm_monitor_metric_alert :  Portal üzerinde görünen Metric sekmesinde inceleyebildiğimiz metricleri alerte dönüştürebildiğimiz resourcedur.
-	Örnek olarak: Request count, private memory, response time, 4xx,5xx gibi durumlar için alarmlar tanımlanabilir.
+azurerm_monitor_metric_alert :  Portal üzerinde görünen Metric sekmesinde inceleyebildiğimiz metricleri alerte dönüştürebildiğimiz resourcedur.
+Örnek olarak: Request count, private memory, response time, 4xx,5xx gibi durumlar için alarmlar tanımlanabilir.
     
-    6- azurerm_private_endpoint :   Eğer Web App dışarıya açılmak istenmiyorsa, local ortamlarınız ile azure arasında bir vpn varsa, private endpoint ekleyerek private endpoint ip adresi üzerinden local bağlantınız ile web app erişimi yapmanızı sağlar.
+azurerm_private_endpoint :   Eğer Web App dışarıya açılmak istenmiyorsa, local ortamlarınız ile azure arasında bir vpn varsa, private endpoint ekleyerek private endpoint ip adresi üzerinden local bağlantınız ile web app erişimi yapmanızı sağlar.
 
 App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
 
