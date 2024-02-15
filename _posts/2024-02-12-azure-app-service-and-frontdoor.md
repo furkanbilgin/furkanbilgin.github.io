@@ -1,5 +1,5 @@
 ---
-title: 'Azure App Service ve Front Door ile Web Site Yayınlama'
+title: 'Azure App Service ve Front Door ile Web Sitenizi Dünya ile Buluşturun'
 date: 2024-02-15T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
@@ -7,7 +7,7 @@ permalink: /azure-app-service-with-front-door/
 categories: Azure
 tags: [azure, cloud, appservice, website]
 img: /assets/img/posts/appservice/app-service.png
-description: 'Azure App Service ve Front Door ile Web Site Yayınlama'
+description: 'Azure App Service ve Front Door ile Web Sitenizi Dünya ile Buluşturun'
 ---
 
 Bu makalemizde Microsoft Azure Cloud ortamında terraform ile bir Web App ve bu Web App önüne bir Front Door kurulumu yapacagız.
