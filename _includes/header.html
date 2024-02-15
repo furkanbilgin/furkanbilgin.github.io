@@ -8,7 +8,7 @@
 		
 		<meta name="description" content="{% if page.description %}{{page.description}}{% else %}{{site.description}}{% endif %}">
 		<meta name="keywords" content="{% if page.tags %}{{page.tags}}{% else %}{{ site.keywords }}{% endif %}">
-		<meta name="image" property="og:image" content="{% if page.img %}{{page.img}}{% else %}{{site.img}}{% endif %}">
+		<meta name="image" property="og:image" content="https://furkanbilgin.com/{% if page.img %}{{page.img}}{% else %}{{site.img}}{% endif %}">
 		<meta name="author" content="{% if page.author %}{{page.author}}{% else %}{{site.description}}{% endif %}">
 		<meta property="article:published_time" content="{% if page.date %}{{page.date}}{% else %}{{site.description}}{% endif %}">
 
