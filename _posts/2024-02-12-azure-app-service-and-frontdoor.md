@@ -12,7 +12,7 @@ description: 'Azure App Service ve Front Door ile Web Site Yayınlama'
 
 Bu makalemizde Microsoft Azure Cloud ortamında terraform ile bir Web App ve bu Web App önüne bir Front Door kurulumu yapacagız.
 
-Azure Web App Nedir?
+<h2>Azure Web App Nedir?</h2>
 
 Windows veya Linux tabanlı ortamlarda çok kolay bir şekilde .NET, .NET Core, Java, Node.js, PHP ve Python gibi yazılım dillerinde geliştirilmiş web projelerinizi yayınlayabileceğiniz bir azure servisidir.
 
@@ -43,7 +43,7 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
 
 App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
 
-Peki Azure Front Door Nedir?
+<h2>Peki Azure Front Door Nedir?</h2>
 
 Microsoft Azure Front Door özellikle web uygulamalarımızı hızlı, güvenli ve ölçeklenebilir bir şekilde dağıtılmasını sağlamak için tasarlanmış bir hizmettir. 
 Azure Front Door, kullanıcılara daha iyi performans, güvenlik ve yüksek erişilebilirlik sağlamaktadır.
