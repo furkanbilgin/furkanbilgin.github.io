@@ -22,7 +22,7 @@ Azure Web App konusunda daha fazla teknik bilgi için aşağıdaki linki incelem
 <a href="https://learn.microsoft.com/tr-tr/azure/app-service/overview" target="_blank">App Service Document</a>
 
 Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentation bize yol gösterecektir. Bunun için aşağıdaki linki ziyaret edebilirsiniz.
-<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/ target="_blank">Terraform documents </a>
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/" target="_blank">Terraform documents </a>
 
 
 
