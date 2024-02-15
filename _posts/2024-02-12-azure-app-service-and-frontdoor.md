@@ -4,7 +4,7 @@ date: 2024-02-15T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
 permalink: /azure-app-service-with-front-door/
-categories: Azure
+categories: Azure, Cloud
 tags: [azure, cloud, appservice, website]
 img: /assets/img/posts/appservice/app-service.png
 description: 'Azure App Service ve Front Door ile Web Sitenizi Dünya ile Buluşturun'
@@ -24,9 +24,7 @@ Azure Web App konusunda daha fazla teknik bilgi için aşağıdaki linki incelem
 Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentation bize yol gösterecektir. Bunun için aşağıdaki linki ziyaret edebilirsiniz.
 <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/" target="_blank">Terraform documents </a>
 
-
-
-App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekildedir.
+App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekildedir. İhtiyaçlara göre ek resourcelar create etmek gerekebilir. 
 
 <b>azurerm_service_plan </b> :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
 	
@@ -41,7 +39,7 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
     
 <b>azurerm_private_endpoint </b>:   Eğer Web App dışarıya açılmak istenmiyorsa, local ortamlarınız ile azure arasında bir vpn varsa, private endpoint ekleyerek private endpoint ip adresi üzerinden local bağlantınız ile web app erişimi yapmanızı sağlar.
 
-App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
+App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır. Yine ihtiyaçlara göre ek resourcelar create etmek gerekebilir. 
 
 <h2>Peki Azure Front Door Nedir?</h2>
 
