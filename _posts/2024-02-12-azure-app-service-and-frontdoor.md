@@ -10,16 +10,16 @@ img: /assets/img/posts/appservice/app-service.png
 description: 'Azure App Service ve Front Door ile Web Sitenizi Dünya ile Buluşturun'
 ---
 
-Bu makalemizde Microsoft Azure Cloud ortamında terraform ile bir Web App ve bu Web App önüne bir Front Door kurulumu yapacagız.
+Bu makalede, Microsoft Azure Cloud ortamında Terraform kullanarak bir Web App oluşturacak ve ardından bu Web App önüne bir Front Door konumlandıracağız.
 
 <h2>Azure Web App Nedir?</h2>
 
 Windows veya Linux tabanlı ortamlarda çok kolay bir şekilde .NET, .NET Core, Java, Node.js, PHP ve Python gibi yazılım dillerinde geliştirilmiş web projelerinizi yayınlayabileceğiniz bir azure servisidir.
+GitHub, Azure DevOps gibi CI/CD araçlarıyla entegre edilebilir, böylece devops süreçlerinizi yönetebilirsiniz.
 
-Github, Azure Devops gibi CI/CD toollarına Web App entegre ederek devops süreçlerinizi yönetebilirsiniz.
+Web App hakkında daha fazla teknik bilgi için <a href="https://learn.microsoft.com/tr-tr/azure/app-service/overview" target="_blank">buraya</a> göz atabilirsiniz.
 
-Azure Web App konusunda daha fazla teknik bilgi için aşağıdaki linki incelemenizi tavsiye ederim. Biz bu makalede terraform ile nasıl web app deploy edeceğimizi göreceğiz.
-<a href="https://learn.microsoft.com/tr-tr/azure/app-service/overview" target="_blank">App Service Document</a>
+Bu makalede Terraform kullanarak nasıl Web App ve Front Door oluşturacağımızı öğreneceğiz.
 
 Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentation bize yol gösterecektir. Bunun için aşağıdaki linki ziyaret edebilirsiniz.
 <a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/" target="_blank">Terraform documents </a>
