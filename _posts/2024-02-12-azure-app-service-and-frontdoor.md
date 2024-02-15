@@ -1,13 +1,13 @@
 ---
-title: 'Azure App Service ile Web Site Yayınlama'
+title: 'Azure App Service ve Front Door ile Web Site Yayınlama'
 date: 2024-02-15T00:00:00+00:00
 author: Furkan Bilgin
 layout: post
-permalink: /azure-app-service/
+permalink: /azure-app-service-with-front-door/
 categories: Azure
 tags: [azure, cloud, appservice, website]
 img: /assets/img/posts/appservice/app-service.png
-description: 'Azure App Service ile Web Site Yayınlama'
+description: 'Azure App Service ve Front Door ile Web Site Yayınlama'
 ---
 
 Bu makalemizde Microsoft Azure Cloud ortamında terraform ile bir Web App ve bu Web App önüne bir Front Door kurulumu yapacagız.
@@ -30,16 +30,16 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
 
 <b>azurerm_service_plan </b> :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
 	
-azurerm_windows_web_app </b>:   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
+<b>azurerm_windows_web_app </b>:   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
 
-azurerm_application_insights </b>:  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsights <a href=" https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview" target="_blank"> Bakınız </a>
+<b>azurerm_application_insights </b>:  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsights <a href=" https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview" target="_blank"> Bakınız </a>
 	
-azurerm_app_service_custom_hostname_binding </b>:  App service oluştuğunda windows uzantılı bir domain oluşur. Bu domain ile erişmek yerine şirketimize ait domain ile erişmek için bu resource ayarlanır.
+<b>azurerm_app_service_custom_hostname_binding </b>:  App service oluştuğunda windows uzantılı bir domain oluşur. Bu domain ile erişmek yerine şirketimize ait domain ile erişmek için bu resource ayarlanır.
 	
-azurerm_monitor_metric_alert </b>:  Portal üzerinde görünen Metric sekmesinde inceleyebildiğimiz metricleri alerte dönüştürebildiğimiz resourcedur.
+<b>azurerm_monitor_metric_alert </b>:  Portal üzerinde görünen Metric sekmesinde inceleyebildiğimiz metricleri alerte dönüştürebildiğimiz resourcedur.
 Örnek olarak: Request count, private memory, response time, 4xx,5xx gibi durumlar için alarmlar tanımlanabilir.
     
-azurerm_private_endpoint </b>:   Eğer Web App dışarıya açılmak istenmiyorsa, local ortamlarınız ile azure arasında bir vpn varsa, private endpoint ekleyerek private endpoint ip adresi üzerinden local bağlantınız ile web app erişimi yapmanızı sağlar.
+<b>azurerm_private_endpoint </b>:   Eğer Web App dışarıya açılmak istenmiyorsa, local ortamlarınız ile azure arasında bir vpn varsa, private endpoint ekleyerek private endpoint ip adresi üzerinden local bağlantınız ile web app erişimi yapmanızı sağlar.
 
 App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
 
