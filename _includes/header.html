@@ -25,7 +25,7 @@
 		<meta property="og:url" content="{{ site.url }}{{ site.baseurl }}{{page.url}}"/>
 		<meta property="og:title" content="{% if page.title %}{{page.title}} - {{site.title}}{% else %}{{site.title}}{% endif %}" />
 		<meta property="og:description" content="{% if page.description %}{{page.description}} {% else %}{{site.description}}{% endif %}" />
-		<meta property="og:image" content="assets/images/favicon.png"/>
+		<meta property="og:image" content="https://furkanbilgin.com/{% if page.img %}{{page.img}}{% else %}{{site.img}}{% endif %}">
 		
 		<!-- Twitter Meta Tags -->
 		<meta name="twitter:card" content="summary"/>
