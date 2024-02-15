@@ -28,7 +28,7 @@ Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentatio
 
 App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekildedir.
 
-azurerm_service_plan  :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
+<b>azurerm_service_plan </b> :  Bu resource içerisinde plana ait isim, planın azuredaki location bilgisi, os type, sku_name (hardware kapasitesi), worket count (kaç farklı instance) ve etiket gibi bilgiler belirtilmektedir.
 	
 azurerm_windows_web_app :   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
 
