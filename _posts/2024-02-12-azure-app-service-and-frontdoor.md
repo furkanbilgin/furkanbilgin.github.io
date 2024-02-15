@@ -19,11 +19,10 @@ Windows veya Linux tabanlı ortamlarda çok kolay bir şekilde .NET, .NET Core, 
 Github, Azure Devops gibi CI/CD toollarına Web App entegre ederek devops süreçlerinizi yönetebilirsiniz.
 
 Azure Web App konusunda daha fazla teknik bilgi için aşağıdaki linki incelemenizi tavsiye ederim. Biz bu makalede terraform ile nasıl web app deploy edeceğimizi göreceğiz.
-
-https://learn.microsoft.com/tr-tr/azure/app-service/overview
+<a href="https://learn.microsoft.com/tr-tr/azure/app-service/overview" target="_blank">App Service Document</a>
 
 Terraform ile oluşturacağımız kaynaklar için terraform AZURERM Documentation bize yol gösterecektir. Bunun için aşağıdaki linki ziyaret edebilirsiniz.
-https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/
+<a href="https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/resources/ target="_blank">Terraform documents </a>
 
 
 
@@ -33,7 +32,7 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
 	
     2- azurerm_windows_web_app :   Azure Web App resource kendisini oluşturmak için kullanacağız. Burada Web App ait plan, hangi resource groupda olacağı, location bilgisi, eğer diğer azure resourceları ile görüşecekse yapılacak vnet integration, oluşturulacak site göre sipecific site configurasyonları, isterseniz web app erişim kısıtı koymak için ip restrictionlar bu resource'da tanımlanır.
 
-	3- azurerm_application_insights :  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsg Bakınız > https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview
+	3- azurerm_application_insights :  Aslında app insight ürünü web app'den bağımsız bir üründür. Web Appi gerçek zamanlı olarak izlemenizi sağlar. Bu hizmet, uygulamanızdaki performans sorunlarından performans metriclerine, oturum bilgilerinden ve diğer bir çok parametreyi otomatik olarak takip ederek size detaylı bir raporlama sağlar. Biz Web App ile App İnsights <a href=" https://learn.microsoft.com/tr-tr/azure/azure-monitor/app/app-insights-overview" target="_blank"> Bakınız </a>
 	
     4- azurerm_app_service_custom_hostname_binding :  App service oluştuğunda windows uzantılı bir domain oluşur. Bu domain ile erişmek yerine şirketimize ait domain ile erişmek için bu resource ayarlanır.
 	
@@ -45,7 +44,7 @@ App Service oluşturmak için gerekli olan resource tipleri aşağıdaki şekild
 App Service oluşturduktan sonra Front Door oluşturmak için aşağıdaki resource tiplerine ihtiyacımız olacaktır.
 
 	1- azurerm_cdn_frontdoor_profile : Frontdoora ait plan burada belirtilir.  
-    Detaylara buradan bakınız (https://azure.microsoft.com/tr-tr/pricing/details/frontdoor/)
+    Detaylara <a href="https://azure.microsoft.com/tr-tr/pricing/details/frontdoor/" target="_blank">buradan bakınız</a>
 
 	2- azurerm_cdn_frontdoor_origin_group: Web veya diğer uygulamanızın originlerini barındıran ve hizmetinize erişim sağlayan origin gruplarını temsil eder.
 	
